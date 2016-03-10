@@ -14,6 +14,9 @@ mysqli_set_charset($con, 'utf8');
 $title =  $_POST["TITLE"];
 
 
+
+
+
 if(empty($title)){
     die("please enter something");
 }
