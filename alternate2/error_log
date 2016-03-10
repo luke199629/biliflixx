@@ -1,0 +1,21 @@
+[17-Feb-2016 09:39:56 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE) in /home/biliflixx/public_html/cs411.php on line 5
+[17-Feb-2016 09:41:35 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:42:59 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE) in /home/biliflixx/public_html/cs411.php on line 5
+[17-Feb-2016 09:43:10 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE) in /home/biliflixx/public_html/cs411.php on line 5
+[17-Feb-2016 09:44:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE) in /home/biliflixx/public_html/cs411.php on line 5
+[17-Feb-2016 09:44:06 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE) in /home/biliflixx/public_html/cs411.php on line 5
+[17-Feb-2016 09:44:30 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:44:31 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:44:32 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:44:33 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:44:35 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:44:36 America/Chicago] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'luke_ad'@'engr-cpanel2.engr.illinois.edu' (using password: YES) in /home/biliflixx/public_html/gaze.php on line 9
+[17-Feb-2016 09:45:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$dbname' (T_VARIABLE) in /home/biliflixx/public_html/cs411.php on line 5
+[17-Feb-2016 09:45:19 America/Chicago] PHP Fatal error:  Call to undefined function mysquli_close() in /home/biliflixx/public_html/gaze.php on line 32
+[17-Feb-2016 09:45:30 America/Chicago] PHP Fatal error:  Call to undefined function mysql_connect_errno() in /home/biliflixx/public_html/cs411.php on line 8
+[17-Feb-2016 09:45:57 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/cs411.php on line 15
+[17-Feb-2016 09:48:41 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/cs411.php on line 15
+[17-Feb-2016 09:48:57 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/cs411.php on line 15
+[17-Feb-2016 09:50:25 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/cs411.php on line 15
+[17-Feb-2016 09:52:03 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/cs411.php on line 15
+[17-Feb-2016 09:52:25 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/cs411.php on line 15

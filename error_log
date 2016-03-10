@@ -1,0 +1,82 @@
+[08-Mar-2016 17:05:47 America/Chicago] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/biliflixx/public_html/gaze.php on line 35
+[08-Mar-2016 17:06:26 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:07:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:07:09 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:07:56 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:09:25 America/Chicago] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/biliflixx/public_html/gaze.php on line 35
+[08-Mar-2016 17:09:26 America/Chicago] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/biliflixx/public_html/gaze.php on line 35
+[08-Mar-2016 17:09:27 America/Chicago] PHP Parse error:  syntax error, unexpected '"<br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/biliflixx/public_html/gaze.php on line 35
+[08-Mar-2016 17:10:57 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:12:03 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:13:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[08-Mar-2016 17:15:55 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 23
+[08-Mar-2016 17:17:04 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 23
+[08-Mar-2016 17:17:14 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 23
+[08-Mar-2016 17:19:41 America/Chicago] PHP Parse error:  syntax error, unexpected '+=' (T_PLUS_EQUAL) in /home/biliflixx/public_html/gaze.php on line 26
+[08-Mar-2016 17:19:55 America/Chicago] PHP Parse error:  syntax error, unexpected '=' in /home/biliflixx/public_html/gaze.php on line 26
+[08-Mar-2016 17:20:10 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 24
+[08-Mar-2016 17:21:07 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 24
+[08-Mar-2016 17:21:52 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 24
+[08-Mar-2016 17:24:08 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 25
+[08-Mar-2016 17:24:36 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 25
+[08-Mar-2016 17:25:37 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 33
+[09-Mar-2016 15:54:02 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/biliflixx/public_html/gaze.php on line 10
+[09-Mar-2016 15:54:03 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 34
+[09-Mar-2016 15:54:34 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/biliflixx/public_html/gaze.php on line 10
+[09-Mar-2016 15:54:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 23
+[09-Mar-2016 15:55:08 America/Chicago] PHP Warning:  mysql_set_charset() expects parameter 2 to be resource, object given in /home/biliflixx/public_html/gaze.php on line 10
+[09-Mar-2016 15:55:09 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 23
+[09-Mar-2016 15:55:10 America/Chicago] PHP Warning:  mysql_set_charset() expects parameter 2 to be resource, object given in /home/biliflixx/public_html/gaze.php on line 10
+[09-Mar-2016 15:55:11 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 23
+[09-Mar-2016 15:55:42 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/biliflixx/public_html/gaze.php on line 10
+[09-Mar-2016 15:55:42 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 34
+[09-Mar-2016 15:57:01 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 34
+[09-Mar-2016 15:57:45 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/gaze.php on line 23
+[09-Mar-2016 16:00:20 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 16:01:06 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 16:01:30 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:04:23 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:04:59 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:06:37 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:07:06 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:07:32 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:07:40 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:08:16 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:08:24 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:08:46 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:09:09 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:09:32 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:36:14 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:36:37 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 16:37:00 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 37
+[09-Mar-2016 17:03:14 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 17:03:16 America/Chicago] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 17:03:25 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 17:03:27 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 17:03:36 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, string given in /home/biliflixx/public_html/gaze.php on line 24
+[09-Mar-2016 17:04:29 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:06:28 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:07:59 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:11:19 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:11:59 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:12:13 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:12:43 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:30:22 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 17:31:00 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 23:23:15 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 23:24:41 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 23:26:02 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[09-Mar-2016 23:28:44 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 12:10:48 America/Chicago] PHP Fatal error:  Call to undefined function connectDB() in /home/biliflixx/public_html/tryPHP.php on line 3
+[10-Mar-2016 12:13:52 America/Chicago] PHP Fatal error:  Call to undefined function connectDB() in /home/biliflixx/public_html/tryPHP.php on line 3
+[10-Mar-2016 12:14:13 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/tryPHP.php on line 19
+[10-Mar-2016 14:27:38 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 14:29:08 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 15:30:51 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 15:31:31 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 15:55:29 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 15:56:14 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 15:56:36 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 15:57:49 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
+[10-Mar-2016 16:19:45 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/tryPHP.php on line 14
+[10-Mar-2016 16:24:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/tryPHP.php on line 14
