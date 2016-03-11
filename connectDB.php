@@ -28,4 +28,3 @@ function test_input($data) {
 }
 ?>
 
-?>
