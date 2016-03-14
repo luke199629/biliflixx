@@ -80,3 +80,23 @@
 [10-Mar-2016 15:57:49 America/Chicago] PHP Fatal error:  Allowed memory size of 33554432 bytes exhausted (tried to allocate 32 bytes) in /home/biliflixx/public_html/gaze.php on line 45
 [10-Mar-2016 16:19:45 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/tryPHP.php on line 14
 [10-Mar-2016 16:24:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/tryPHP.php on line 14
+[10-Mar-2016 17:23:31 America/Chicago] PHP Parse error:  syntax error, unexpected '$password' (T_VARIABLE), expecting ',' or ';' in /home/biliflixx/public_html/insertUser.php on line 22
+[10-Mar-2016 17:41:49 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/insertUser.php on line 31
+[10-Mar-2016 17:42:50 America/Chicago] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/biliflixx/public_html/insertUser.php on line 33
+[10-Mar-2016 17:43:19 America/Chicago] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/biliflixx/public_html/insertUser.php on line 33
+[10-Mar-2016 17:43:35 America/Chicago] PHP Parse error:  syntax error, unexpected 'id' (T_STRING) in /home/biliflixx/public_html/insertUser.php on line 33
+[10-Mar-2016 17:49:34 America/Chicago] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 17:49:37 America/Chicago] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 17:49:40 America/Chicago] PHP Warning:  mysqli_query() expects at least 2 parameters, 1 given in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 17:51:02 America/Chicago] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 17:51:02 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 17:51:10 America/Chicago] PHP Warning:  mysql_query(): Access denied for user ''@'localhost' (using password: NO) in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 17:51:10 America/Chicago] PHP Warning:  mysql_query(): A link to the server could not be established in /home/biliflixx/public_html/insertUser.php on line 25
+[10-Mar-2016 18:49:50 America/Chicago] PHP Fatal error:  Call to undefined function test_input() in /home/biliflixx/public_html/searchTitle.php on line 21
+[10-Mar-2016 23:52:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/connectDB.php:31) in /home/biliflixx/public_html/insertUser.php on line 23
+[11-Mar-2016 00:27:29 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 43
+[11-Mar-2016 00:29:07 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 43
+[11-Mar-2016 00:29:08 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 43
+[11-Mar-2016 00:30:42 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 43
+[11-Mar-2016 00:37:39 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 38
+[11-Mar-2016 00:40:20 America/Chicago] PHP Parse error:  syntax error, unexpected 'LINK' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/deleteUser.php on line 38

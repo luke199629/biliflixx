@@ -5,6 +5,7 @@
  * Date: 3/10/16
  * Time: 4:05 PM
  */
+header('Content-Type: text/html; charset=utf8');
 include "connectDB.php";
 
 $con = connectDB();
@@ -20,6 +21,10 @@ if(empty($title)){
 else{
     $title = test_input($title);
 }
+
+
+
+
 
 
 $sql = "SELECT * FROM post WHERE post.title LIKE '%".$title."%'";

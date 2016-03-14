@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Biliflixx - by Gaze of Intelligence</title>
@@ -22,13 +22,13 @@
                 }       
             </style>
     </head>
-
-    <body>
+   <body>
 
         	<div id="wrapper"> 
             <ul id="nav" class="cf">
                 <li><a href="http://biliflixx.web.engr.illinois.edu/" title="Home">Home</a></li>
                 <li><a href="#" title="About Us">About Us</a></li>
+                 <li><a href="#" title="Regist">Registration</a></li>
                 <li><a href="#" title="Services">Services</a></li>
                 <li><a href="#" title="Work">Work</a></li>
                 <li><a href="#" title="Contact Us">Contact Us</a></li>
@@ -45,7 +45,7 @@
                     	<P><span class="title">Username</span> <input name="" type="text" /></P>
                         <P><span class="title">Password</span> <input name="" type="password" /></P>
                         <p><a href="javascript:q=(document.location.href);void(open('tryout.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Login" /></a></p>
-			<p><a href="javascript:q=(document.location.href);void(open('tryout.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Register" /></a></p>
+			<p><a href="javascript:q=(document.location.href);void(open('insertUser.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Register" /></a></p>
                     </form>
                 </div>
             </div>
@@ -55,11 +55,18 @@
     		 				<table border="0" align="center" cellpadding="10"  right = "40">
    		 		
 
-						<form action="http://search.bilibili.com/all" id="searchform" target="_blank">
-						<input name="keyword" type="text" class="search-keyword" id="search-keyword" autocomplete="off" accesskey="s" x-webkit-speech x-webkit-grammar="builtin:translate">
-						<tr><td><input type="submit" value="Search" align="center"/></td></tr>
-						
-		  				</form>   
+						<!--<form action="http://search.bilibili.com/all" id="searchform" target="_blank">
+						<input name="keyword" type="text" class="search-keyword" id="search-keyword" autocomplete="off" accesskey="s" x-webkit-speech x-webkit-grammar="builtin:translate" >
+						<tr><td><input type="submit" value="Search" align="center"/></td></tr>-->
+						<form action="searchTitle.php" method="post">
+   						
+   				 			<!--<input type="text" name="TITLE" value="因锤思汀" font size="12" class = "test" >-->
+   				 			<input type="text"  name="TITLE" value="因锤思汀" onfocus="if(value=='因锤思汀') {value=''}" onblur="if (value=='') {value='因锤思汀'}" name="keyword" size="30" style="color:#A9A9A9;" class = "test">
+
+
+   				 			
+   				 			
+		  					<input type= "image" src="searchbox.gif" class = "searchButton"></form>  
 						</div>
 						
 	</br>	</p>

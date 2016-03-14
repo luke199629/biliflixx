@@ -1,5 +1,5 @@
 <?php
-
+header('Content-Type: text/html; charset=utf8');
 include 'connectDB.php';
 $con = connectDB();
 
