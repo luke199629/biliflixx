@@ -16,6 +16,7 @@ include 'connectDB.php';
 if($username && $password){
     $username = test_input($username);
     $password = test_input($password);
+    //$password = sha1($password);
 
 
     $connect=connectDB();
@@ -32,27 +33,25 @@ if($username && $password){
         if($username == $dbusername && $password == $dbpassword){
             $_SESSION['username'] = $username;
             $_SESSION['login'] = 1;
-            //TODO INSET HEADER HERE
-            //echo "login success";
+//            //TODO INSET HEADER HERE
+//            echo "login success";
+            header("Location: /usrpage.php");
 
         }
         else{//wrong pass
             $_SESSION['login'] = 0;
-            header("Location: /logininter.php?msg=Wrong Password/UserName combination");
+            header("Location: /login.php?msg=Wrong Password/UserName combination");
         }
     }
     else{//no username
-        //TODO INSERT HEADER HERE
         $_SESSION['login'] = 2;
-        header("Location: /logininter.php?msg=No User Name");
-
+        header("Location: /login.php?msg=No User Name");
     }
     $connect->close();
 }
 else{//not entered
     $_SESSION['login'] = 3;
-    //TODO INSET HEADER HERE
-    header("Location: /logininter.php?msg=Please User Name/Password");
+    header("Location: /login.php?msg=Please User Name/Password");
 }
 
 
