@@ -100,3 +100,7 @@
 [11-Mar-2016 00:30:42 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 43
 [11-Mar-2016 00:37:39 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/deleteUser.php on line 38
 [11-Mar-2016 00:40:20 America/Chicago] PHP Parse error:  syntax error, unexpected 'LINK' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/deleteUser.php on line 38
+[14-Mar-2016 22:46:20 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/connectDB.php:31) in /home/biliflixx/public_html/login.php on line 56
+[14-Mar-2016 22:52:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/connectDB.php:31) in /home/biliflixx/public_html/login.php on line 56
+[15-Mar-2016 17:14:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/updatePassword.php:29) in /home/biliflixx/public_html/updatePassword.php on line 35
+[15-Mar-2016 17:31:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/deleteUserFromUser.php:28) in /home/biliflixx/public_html/deleteUserFromUser.php on line 42

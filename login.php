@@ -18,11 +18,17 @@
 <form method="post" action="logincheck.php">
 
     Name: <input type="text" name="username">
-    <span class="error">* <?php echo $nameErr;?></span>
+    <span class="error">* 
+     
+    
+    <?php echo $nameErr;?></span>
     <br><br>
 
     PassWord: <input type="text" name = "password">
-    <span class="error">* <?php echo $passwordErr;?></span>
+    <span class="error">* 
+    
+    
+    <?php echo $passwordErr;?></span>
 
     <br><br>
 

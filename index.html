@@ -27,27 +27,42 @@
         	<div id="wrapper"> 
             <ul id="nav" class="cf">
                 <li><a href="http://biliflixx.web.engr.illinois.edu/" title="Home">Home</a></li>
-                <li><a href="#" title="About Us">About Us</a></li>
-                 <li><a href="#" title="Regist">Registration</a></li>
+                <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411sp16/Gaze+of+Intelligence" title="About Us">About Us</a></li>
+                 <li><a href="javascript:q=(document.location.href);void(open('insertUser.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));" title="Regist">Registration</a></li>
                 <li><a href="#" title="Services">Services</a></li>
                 <li><a href="#" title="Work">Work</a></li>
                 <li><a href="#" title="Contact Us">Contact Us</a></li>
             </ul>
             
             <!--POPUP starts here-->
+            
             <div class="ar login_popup">
                 <a class="button" href="#" >Login</a>
                 
                 
                 <div class="popup">
                 	<a href="#" class="close">CLOSE</a>
-                    <form>
-                    	<P><span class="title">Username</span> <input name="" type="text" /></P>
-                        <P><span class="title">Password</span> <input name="" type="password" /></P>
-                        <p><a href="javascript:q=(document.location.href);void(open('tryout.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Login" /></a></p>
+                    	
+                   		 <form method="post" action="logincheck.php">
+
+  					  
+                    			<P><span class="title">Username</span> <input name="username" type="text" /></P>
+                        		<P><span class="title">Password</span> <input name="password" type="password" /></P>
+		<br>
+
+
+				<input type="submit" name="submit" value="LOGIN">
+
+				</form>
+                    <!--
+                   
+                        <form>
+                   	
+                        <p><a href="javascript:q=(document.location.href);void(open('logincheck.php?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Login" /></a></p>
 			<p><a href="javascript:q=(document.location.href);void(open('insertUser.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Register" /></a></p>
-                    </form>
+                    </form>   -->
                 </div>
+                
             </div>
          </div>
                <p><br>
@@ -60,8 +75,8 @@
 						<tr><td><input type="submit" value="Search" align="center"/></td></tr>-->
 						<form action="searchTitle.php" method="post">
    						
-   				 			<!--<input type="text" name="TITLE" value="因锤思汀" font size="12" class = "test" >-->
-   				 			<input type="text"  name="TITLE" value="因锤思汀" onfocus="if(value=='因锤思汀') {value=''}" onblur="if (value=='') {value='因锤思汀'}" name="keyword" size="30" style="color:#A9A9A9;" class = "test">
+   				 			<!--<input type="text" name="TITLE" value="Please enter the key words" font size="12" class = "test" >-->
+   				 			<input type="text"  name="TITLE" value="Please enter the key words_(:з」∠)_" onfocus="if(value=='Please enter the key words_(:з」∠)_') {value=''}" onblur="if (value=='') {value='Please enter the key words_(:з」∠)_'}" name="keyword" size="30" style="color:#A9A9A9;" class = "test">
 
 
    				 			
