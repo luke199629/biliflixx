@@ -1,55 +1,40 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: zhangyuanshan
- * Date: 3/10/16
- * Time: 5:17 PM
- */
+<!--/**-->
+<!--* Created by PhpStorm.-->
+<!--* User: zhangyuanshan-->
+<!--* Date: 3/14/16-->
+<!--* Time: 11:17 PM-->
+<!--*/-->
+<!---->
 
-session_start();
-$username = $_POST['username'];
-$password = $_POST['password'];
-include 'connectDB.php';
-
-
-
-if($username && $password){
-    $connect=connectDB();
-    $sql = "SELECT * FROM user WHERE username = '$username'";
-    $result = $connect->query($sql);
-    $numrows = $result->num_rows;
-
-    if($numrows > 0){
-        $row = $result->fetch_assoc();
-        $dbusername = $row['username'];
-        $dbpassword = $row['password'];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
 
 
-        if($username == $dbusername && $password == $dbpassword){
-            $_SESSION['username'] = $username;
-            $_SESSION['login'] = 1;
-            //TODO INSET HEADER HERE
-            echo "login success";
+<form method="post" action="logincheck.php">
 
-        }
-        else{
-            $_SESSION['login'] = 0;
-            //TODO INSERT HEADER HERE
+    Name: <input type="text" name="username">
+    <span class="error">* <?php echo $nameErr;?></span>
+    <br><br>
 
+    PassWord: <input type="text" name = "password">
+    <span class="error">* <?php echo $passwordErr;?></span>
 
-        }
+    <br><br>
+
+    <?php
+    if (isset($_GET["msg"])) {
+        echo $_GET["msg"]."<br><br>";
     }
-    else{
-        //TODO INSERT HEADER HERE
-        $_SESSION['login'] = 2;
-
-    }
-    $connect->close();
-}
-else{
-    $_SESSION['login'] = 3;
+    ?>
 
 
-}
+    <input type="submit" name="submit" value="Submit">
 
-
+</form>
+</body>
+</html>

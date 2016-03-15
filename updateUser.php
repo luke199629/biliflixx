@@ -26,7 +26,8 @@ echo $username . "##" . $password . "##" . $re_enteredpassword . "##" . $age . "
 //$sql = "SELECT * FROM post WHERE post.title LIKE '%".$username."%'";
 // $sql = mysqli_query($con, "INSERT INTO user(username, password, gender, age, icon_location)
 // 	VALUES ('$username', '$password', '$gender', '$age', '$iconaddr')");
-$sql = mysqli_query($con, "UPDATE user SET password = '$password', gender = '$gender', age = '$age', icon_location = '$iconAddr' WHERE username = '$username'");
+
+mysqli_query($con, "UPDATE user SET password = '$password', gender = '$gender', age = '$age', icon_location = '$iconAddr' WHERE username = '$username'");
 
 $sql = "SELECT * FROM user";
 $result = mysqli_query($con, $sql);

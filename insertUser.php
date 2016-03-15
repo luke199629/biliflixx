@@ -14,7 +14,9 @@ mysqli_set_charset($con, 'utf8');
 
 $username =  $_POST["username"];
 $password = $_POST["password"];
+
 $re_enteredpassword = $_POST["re_enteredpassword"];
+
 $age = $_POST["age"];
 $iconaddr = $_POST["iconAddr"];
 $gender = $_POST["gender"];
@@ -24,6 +26,7 @@ if($password != $re_enteredpassword || $username == ""){
 }
 // echo $username . "##" . $password . "##" . $re_enteredpassword . "##" . $age . "##" . $iconaddr . "##" . $gender . "<br>";
 //$sql = "SELECT * FROM post WHERE post.title LIKE '%".$username."%'";
+//$password = sha1($password);
 $sql = mysqli_query($con, "INSERT INTO user(username, password, gender, age, icon_location)
 	VALUES ('$username', '$password', '$gender', '$age', '$iconaddr')");
 
