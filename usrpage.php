@@ -42,7 +42,7 @@ else{
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login</title>
+    <title>User Profile</title>
 </head>
 <body>
 
