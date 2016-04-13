@@ -104,3 +104,108 @@
 [14-Mar-2016 22:52:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/connectDB.php:31) in /home/biliflixx/public_html/login.php on line 56
 [15-Mar-2016 17:14:38 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/updatePassword.php:29) in /home/biliflixx/public_html/updatePassword.php on line 35
 [15-Mar-2016 17:31:46 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/deleteUserFromUser.php:28) in /home/biliflixx/public_html/deleteUserFromUser.php on line 42
+[17-Mar-2016 03:10:23 America/Chicago] PHP Fatal error:  Call to a member function query() on a non-object in /home/biliflixx/public_html/showAnime.php on line 27
+[17-Mar-2016 03:20:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'VideoCover' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showAnime.php on line 83
+[17-Mar-2016 03:30:32 America/Chicago] PHP Parse error:  syntax error, unexpected 'VideoCover' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showAnime.php on line 83
+[02-Apr-2016 23:39:41 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'biliflix_luke_ad'@'engr-cpanel2.engr.illinois.edu' to database 'biliflix_bilibili_experiment' in /home/biliflixx/public_html/bigdump.php on line 394
+[02-Apr-2016 23:39:41 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/biliflixx/public_html/bigdump.php on line 933
+[02-Apr-2016 23:39:45 America/Chicago] PHP Warning:  mysqli::mysqli(): (HY000/1044): Access denied for user 'biliflix_luke_ad'@'engr-cpanel2.engr.illinois.edu' to database 'biliflix_bilibili_experiment' in /home/biliflixx/public_html/bigdump.php on line 394
+[02-Apr-2016 23:39:45 America/Chicago] PHP Warning:  mysqli::close(): Couldn't fetch mysqli in /home/biliflixx/public_html/bigdump.php on line 933
+[02-Apr-2016 23:41:20 America/Chicago] PHP Warning:  POST Content-Length of 187796590 bytes exceeds the limit of 26214400 bytes in Unknown on line 0
+[11-Apr-2016 14:14:22 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:14:22 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:14:22 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:14:57 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:14:57 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:14:57 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:19:21 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:19:21 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:19:21 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:19:32 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:19:32 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:19:32 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:19:36 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:19:36 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:19:36 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:19:55 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:19:55 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:19:55 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:19:58 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:19:58 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:19:58 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:00 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:00 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:00 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:04 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:04 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:04 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:07 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:07 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:07 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:09 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:09 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:09 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:12 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:12 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:12 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:15 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:15 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:15 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:18 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:18 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:18 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:20:21 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:20:21 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 14:20:21 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 14:24:56 America/Chicago] PHP Warning:  mysqli_set_charset() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 13
+[11-Apr-2016 14:24:56 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 35
+[11-Apr-2016 14:29:55 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 41
+[11-Apr-2016 14:29:55 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 14:30:09 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 41
+[11-Apr-2016 14:30:09 America/Chicago] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 14:37:00 America/Chicago] PHP Parse error:  syntax error, unexpected '$videoid' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:05:25 America/Chicago] PHP Fatal error:  Cannot redeclare connectDB() (previously declared in /home/biliflixx/public_html/connectDB.php:12) in /home/biliflixx/public_html/connectDB.php on line 21
+[11-Apr-2016 15:12:29 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 45
+[11-Apr-2016 15:13:44 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:15:11 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:16:04 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 15:17:00 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 42
+[11-Apr-2016 15:17:58 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 40
+[11-Apr-2016 15:18:17 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 40
+[11-Apr-2016 15:22:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:01 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:29 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:33 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:38 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:51 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:23:55 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/biliflixx/public_html/favourates.php on line 44
+[11-Apr-2016 15:24:45 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:24:49 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:24:52 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:25:35 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:26:17 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 35
+[11-Apr-2016 15:26:25 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 35
+[11-Apr-2016 15:26:26 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 35
+[11-Apr-2016 15:26:52 America/Chicago] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/biliflixx/public_html/favourates.php on line 35
+[11-Apr-2016 15:27:24 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:27:24 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:27:32 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:27:47 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:27:52 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:27:55 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:27:59 America/Chicago] PHP Warning:  mysql_fetch_array() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:29:28 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:29:45 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:29:47 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:29:57 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:30:07 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:33:08 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:33:16 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:33:21 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:33:25 America/Chicago] PHP Warning:  mysql_fetch_row() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:33:35 America/Chicago] PHP Warning:  mysql_result() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 36
+[11-Apr-2016 15:33:35 America/Chicago] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 37
+[11-Apr-2016 15:44:33 America/Chicago] PHP Fatal error:  Call to undefined function alert() in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:45:35 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/favourates.php on line 39
+[11-Apr-2016 15:46:09 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/favourates.php on line 39

@@ -34,6 +34,8 @@ else{
     die();
 }
 
+mysqli_close($con);
+
 
 ?>
 
@@ -57,11 +59,29 @@ echo "gender: ".$gender."<br>";
 
 ?>
 
+
+<br>
+Upload video
+<br>
+<a href="upload.php">UploadPage</a>
+
+
+<br>
+<br>
 <br>
 Update info:
 <br>
 <br>
 
+
+<form action="Cookies.php" method="post">
+    Cookies:<br>
+    <input type="Submit">
+</form>
+
+
+
+<br>
 <form action="updatePassword.php" method="post">
     Password:<br>
     <input name="password" type="password"/><br>
@@ -91,7 +111,6 @@ Update info:
     Delete Account:<br>
     <input type="Submit">
 </form>
-
 
 
 </body>

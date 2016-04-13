@@ -22,8 +22,17 @@ form input[type=text], form input[type=password]{ border: 1px solid #fff; paddin
 .overlay{ z-index:5; background: rgba(0, 0, 0, .50); display: block; position:absolute;top:0; right:0; bottom: 0; left:0; }
 
 .search{ 
-position:relative; top:200px; left:340px;
- }
+position: fixed;
+            _position: absolute;
+            z-index: 1;
+            top: 40%;
+            left: 45%;
+            margin: -141px 0 0 -201px;
+            line-height: 280px;
+            text-align: center;
+            font-size: 14px;
+            overflow: hidden;}
+            
 .test {    
 width:500px;         
 height:40px;   
@@ -45,6 +54,7 @@ width:40px;
 height:40px;
 top:10px;
 }
+
 
 .popup{ padding: 10px 10px 35px; background: #fff; z-index: 999; display: none; position: absolute; right: 0; }
 #footer{ position: fixed; bottom: 0; background: #fff; width: 100%; font-size: 12px; text-align: center; }

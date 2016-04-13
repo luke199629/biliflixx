@@ -35,7 +35,7 @@ if(mysqli_num_rows($result) > 0){
 
 //        echo "id: " . $row["id"] . " , title: " . $row["title"];
 
-        echo "<a href=".$linkinfo.">id:".$row["id"]." , title:".$row["title"]."</a>";
+        echo "<a href=".$linkinfo.">id:".$row["aid"]." , title:".$row["title"]."</a>";
 
         echo "<br>";
         $ctr++;

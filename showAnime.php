@@ -8,6 +8,7 @@
 header('Content-Type: text/html; charset=utf8');
 
 include "connectDB.php";
+include "untility.php";
 
 header('Content-Type: text/html; charset=utf8');
 
@@ -43,7 +44,7 @@ $row = $result->fetch_assoc();
 
 $title = $row["title"];
 
-$posttime = $row['posttime'];
+//$posttime = $row['posttime'];
 
 $play = $row['play'];
 
@@ -57,6 +58,34 @@ $dis = $row['description'];
 
 $pic = $row["pic"];
 
+$aid = $row["aid"];
+
+
+
+session_start();
+
+if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1) {
+
+    echo "updating";
+    
+    $sql2 = "SELECT * FROM aid_tid_duration WHERE aid = '$aid'";
+    $result2 = $con->query($sql2);
+    $aidAndTid = $result2->fetch_assoc();
+    
+    $tid = $aidAndTid["tid"];
+    
+    $parentID = findParentid($tid, $con);
+
+    $user = $_SESSION['username'];
+    
+    changeFavorVal($parentID, 1, $user, $con);
+
+}
+
+
+$sql3 = "UPDATE post SET play = play + 1 where id = '$id'";
+
+$con->query($sql3);
 
 mysqli_close($con);
 
@@ -80,7 +109,7 @@ Anime info:
 echo "<img src=".$pic." alt=\"VideoCover\">";
 echo "<br>";
 echo "ANIME TITLE:".$title."<br><br>";
-echo "Post time:".$posttime."<br><br>";
+//echo "Post time:".$posttime."<br><br>";
 echo "Total plays:".$play."<br><br>";
 echo "tags:".$tags."<br><br>";
 echo "author:".$author."<br><br>";
@@ -88,7 +117,11 @@ echo "description:".$dis."<br><br>";
 
 ?>
 
+<a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>&aid=<?php echo $aid;?>">I like it!
+</a>
+<!--<form action="favourates.php" method="post">-->
+<!--    <input type="Submit">-->
+<!--</form>-->
 
 </body>
 </html>
-
