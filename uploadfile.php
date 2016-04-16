@@ -14,15 +14,15 @@ session_start();
  * @param $gen
  * @param $con
  */
-function inserNewtidpid($currentAid, $gen, $con)
-{
-    $sql6 = "INSERT INTO aid_tid_duration(aid, tid) VALUE ('$currentAid', '$gen')";
-
-    if ($con->query($sql6) === TRUE) {
-    } else {
-        echo "Error: " . $sql6 . "<br>" . $con->error;
-    }
-}
+//function inserNewtidpid($currentAid, $gen, $con)
+//{
+//    $sql6 = "INSERT INTO aid_tid_duration(aid, tid) VALUE ('$currentAid', '$gen')";
+//
+//    if ($con->query($sql6) === TRUE) {
+//    } else {
+//        echo "Error: " . $sql6 . "<br>" . $con->error;
+//    }
+//}
 
 if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1) {
     $title = $_POST["title"];
@@ -46,16 +46,7 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 //    $sql2 = mysqli_query($con, "INSERT INTO user(username, password, gender, age, icon_location)
 //	VALUES ('$username', '$password', '$gender', '$age', '$iconaddr')");
 
-    $sql2 = "INSERT INTO post(aid, title, website, tag, pic, description, author, posttime) 
-    VALUE ('$currentAid', '$title', ' ', '$tags', '$cover', '$dis', '$auth', '$currentime')";
 
-    if ($con->query($sql2) === TRUE) {
-        echo "New record created successfully <br>";
-        echo "<a href=http://biliflixx.web.engr.illinois.edu/upload.php> uploadPage </a>";
-
-    } else {
-        echo "Error: " . $sql2 . "<br>" . $con->error;
-    }
 
     $sql3 = "UPDATE post SET cid = '$currentAid' WHERE id = 117340";
 
@@ -89,7 +80,16 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
     }
 
 
-    inserNewtidpid($currentAid, $gen, $con);
+    $sql2 = "INSERT INTO post(aid, title, website, tag, pic, description, author, posttime, tid, pid) 
+    VALUE ('$currentAid', '$title', ' ', '$tags', '$cover', '$dis', '$auth', '$currentime', '$gen','$parentID')";
+
+    if ($con->query($sql2) === TRUE) {
+        echo "New record created successfully <br>";
+        echo "<a href=http://biliflixx.web.engr.illinois.edu/upload.php> uploadPage </a>";
+
+    } else {
+        echo "Error: " . $sql2 . "<br>" . $con->error;
+    }
 
 
 }

@@ -34,7 +34,6 @@ else{
     die();
 }
 
-mysqli_close($con);
 
 
 ?>
@@ -74,13 +73,6 @@ Update info:
 <br>
 
 
-<form action="Cookies.php" method="post">
-    Cookies:<br>
-    <input type="Submit">
-</form>
-
-
-
 <br>
 <form action="updatePassword.php" method="post">
     Password:<br>
@@ -111,6 +103,15 @@ Update info:
     Delete Account:<br>
     <input type="Submit">
 </form>
+
+    
+<br>
+<a href="index.html">Back to homepage
+</a>
+
+<br>
+<a href="showFavorites.php?username=<?php echo $usrname;?>">Show my favorites
+</a>
 
 
 </body>

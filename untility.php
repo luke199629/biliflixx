@@ -41,7 +41,7 @@ function findParentid($tid, $con)
  */
 function changeFavorVal($parentID, $increment, $user, $con)
 {
-    $sql5 = "UPDATE user SET `$parentID` = `$parentID` + 1 WHERE username = '$user'";
+    $sql5 = "UPDATE user SET `$parentID` = `$parentID` + '$increment' WHERE username = '$user'";
 
     if ($con->query($sql5) === TRUE) {
     } else {
@@ -50,4 +50,18 @@ function changeFavorVal($parentID, $increment, $user, $con)
 }
 
 
+/**
+ * @param $id
+ * @param $con
+ */
+function fetchRowsFromFavID($id, $con)
+{
+    $sql2 = "SELECT * FROM favorites WHERE videoid = '$id'";
+
+    echo $sql2;
+
+    $postResult = $con->query($sql2);
+    
+    return $postResult;
+}
 

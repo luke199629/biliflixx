@@ -45,6 +45,7 @@ $row = $result->fetch_assoc();
 $title = $row["title"];
 
 //$posttime = $row['posttime'];
+$pid = $row['pid'];
 
 $play = $row['play'];
 
@@ -60,25 +61,29 @@ $pic = $row["pic"];
 
 $aid = $row["aid"];
 
+$tid = $row["tid"];
+
+$favors = $row["favorites"];
+
+$postime = $row["posttime"];
+
+
+$sql2 = "SELECT * FROM GenreType WHERE tid = '$tid'";
+
+$rows = $con->query($sql2);
+
+$row = $rows->fetch_assoc();
+
+$tidName = $row["tname"];
 
 
 session_start();
 
 if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1) {
 
-    echo "updating";
-    
-    $sql2 = "SELECT * FROM aid_tid_duration WHERE aid = '$aid'";
-    $result2 = $con->query($sql2);
-    $aidAndTid = $result2->fetch_assoc();
-    
-    $tid = $aidAndTid["tid"];
-    
-    $parentID = findParentid($tid, $con);
-
     $user = $_SESSION['username'];
     
-    changeFavorVal($parentID, 1, $user, $con);
+    changeFavorVal($pid, 1, $user, $con);
 
 }
 
@@ -113,15 +118,16 @@ echo "ANIME TITLE:".$title."<br><br>";
 echo "Total plays:".$play."<br><br>";
 echo "tags:".$tags."<br><br>";
 echo "author:".$author."<br><br>";
+echo "Genre:".$tidName."<br><br>";
 echo "description:".$dis."<br><br>";
-
+echo "favorites:".$favors."<br><br>";
+echo "time is:".$postime."<br><br>";
+echo gmdate('o - M, d - H:i:s', $postime);
 ?>
 
-<a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>&aid=<?php echo $aid;?>">I like it!
+<a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>">I like it!
 </a>
-<!--<form action="favourates.php" method="post">-->
-<!--    <input type="Submit">-->
-<!--</form>-->
+
 
 </body>
 </html>
