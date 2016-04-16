@@ -121,7 +121,6 @@ echo "author:".$author."<br><br>";
 echo "Genre:".$tidName."<br><br>";
 echo "description:".$dis."<br><br>";
 echo "favorites:".$favors."<br><br>";
-echo "time is:".$postime."<br><br>";
 echo gmdate('o - M, d - H:i:s', $postime);
 ?>
 

@@ -1,4 +1,10 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: zhangyuanshan
+ * Date: 3/10/16
+ * Time: 4:05 PM
+ */
 session_start();
 
 header('Content-Type: text/html; charset=utf8');
@@ -16,22 +22,54 @@ header('Content-Type: text/html; charset=utf8');
 
 
 <?php
-/**
- * Created by PhpStorm.
- * User: zhangyuanshan
- * Date: 3/10/16
- * Time: 4:05 PM
- */
 
 include "connectDB.php";
-
 
 $con = connectDB();
 mysqli_set_charset($con, 'utf8');
 
 
-$title =  $_POST["TITLE"];
+$title =  $_GET["TITLE"];
 
+$pageNum = 1;
+
+$startPage = 0;
+
+$ranks = "default";
+
+$sGenre = "default";
+
+$useGen = "false";
+
+$maxPage = 0;
+
+$ssuser = "false";
+
+if(isset($_GET["searchUser"])){
+    $ssuser = $_GET["searchUser"];
+}
+
+
+if(isset($_GET["maxPage"])){
+    $maxPage = $_GET["maxPage"];
+}
+
+if (isset($_GET["rankStandard"])){
+    $ranks = $_GET["rankStandard"];
+}
+
+if(isset($_GET["useGenre"])){
+    $useGen = $_GET["useGenre"];
+}
+
+if(isset($_GET["genre"])){
+    $sGenre = $_GET["genre"];
+}
+
+if (isset($_GET["pageNum"])){
+    $pageNum = $_GET["pageNum"];
+    $startPage = $pageNum * 40;
+}
 
 if(empty($title)){
     die("please enter something");
@@ -43,16 +81,17 @@ else{
 
 $sql = "";
 
-if(isset($_POST["searchUser"]) && $_POST["searchUser"] == "true"){
-    $sql = "SELECT * FROM post WHERE post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%'";
+if(isset($_GET["searchUser"]) && $_GET["searchUser"] == "true"){
+    echo 'hihi';
+    $sql = "SELECT * FROM post WHERE post.author LIKE '%" . $title . "%'";
 
 }
 else {
 
-    if(isset($_POST["rankStandard"])){
-        if($_POST["rankStandard"] == "byHotnessDesc"){
-            if(isset($_POST["genre"]) && isset($_POST["useGenre"]) && $_POST["useGenre"] == "true"){
-                $genre = $_POST["genre"];
+    if(isset($_GET["rankStandard"])){
+        if($_GET["rankStandard"] == "byHotnessDesc"){
+            if(isset($_GET["genre"]) && isset($_GET["useGenre"]) && $_GET["useGenre"] == "true"){
+                $genre = $_GET["genre"];
                 $sql = "SELECT * FROM post WHERE (post.tid = '$genre' OR post.pid = '$genre') AND (post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%' )
             ORDER BY favorites DESC, play DESC";
             }
@@ -61,9 +100,9 @@ else {
             ORDER BY favorites DESC, play DESC";
             }
         }
-        else if ($_POST["rankStandard"] == "byTimeDesc"){
-            if(isset($_POST["genre"]) && isset($_POST["useGenre"]) && $_POST["useGenre"] == "true"){
-                $genre = $_POST["genre"];
+        else if ($_GET["rankStandard"] == "byTimeDesc"){
+            if(isset($_GET["genre"]) && isset($_GET["useGenre"]) && $_GET["useGenre"] == "true"){
+                $genre = $_GET["genre"];
                 $sql = "SELECT * FROM post WHERE (post.tid = '$genre' OR post.pid = '$genre') AND ( AND '%'post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%') 
             ORDER BY posttime DESC";
             }
@@ -72,9 +111,9 @@ else {
             ORDER BY posttime DESC";
             }
         }
-        if($_POST["rankStandard"] == "byHotnessAsc"){
-            if(isset($_POST["genre"]) && isset($_POST["useGenre"]) && $_POST["useGenre"] == "true"){
-                $genre = $_POST["genre"];
+        if($_GET["rankStandard"] == "byHotnessAsc"){
+            if(isset($_GET["genre"]) && isset($_GET["useGenre"]) && $_GET["useGenre"] == "true"){
+                $genre = $_GET["genre"];
                 $sql = "SELECT * FROM post WHERE (post.tid = '$genre' OR post.pid = '$genre') AND (post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%' )
             ORDER BY favorites ASC, play ASC";
             }
@@ -83,9 +122,9 @@ else {
             ORDER BY favorites ASC, play ASC";
             }
         }
-        else if ($_POST["rankStandard"] == "byTimeAsc"){
-            if(isset($_POST["genre"]) && isset($_POST["useGenre"]) && $_POST["useGenre"] == "true"){
-                $genre = $_POST["genre"];
+        else if ($_GET["rankStandard"] == "byTimeAsc"){
+            if(isset($_GET["genre"]) && isset($_GET["useGenre"]) && $_GET["useGenre"] == "true"){
+                $genre = $_GET["genre"];
                 $sql = "SELECT * FROM post WHERE (post.tid = '$genre' OR post.pid = '$genre') AND ( AND '%'post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%') 
             ORDER BY posttime ASC";
             }
@@ -94,7 +133,7 @@ else {
             ORDER BY posttime ASC";
             }
         }
-        else if ($_POST["rankStandard"] == "byFavor" && isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1){
+        else if ($_GET["rankStandard"] == "byFavor" && isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1){
             $username = $_SESSION['username'];
             $sql0 = "SELECT * FROM user WHERE username = '$username'";
 
@@ -233,8 +272,18 @@ else {
     }
 }
 
+if($pageNum == 1){
+    $temp = $con->query($sql);
+    $totalResults = mysqli_num_rows($temp);
+    $maxPage = $totalResults / 40;
+}
+
+$sql= $sql." LIMIT 40 OFFSET ".$startPage.";";
+
 //echo $sql;
+
 $result = mysqli_query($con, $sql);
+
 
 //print out the data returned from the database
 $ctr = 0;
@@ -251,6 +300,17 @@ if (mysqli_num_rows($result) > 0) {
         if ($ctr >= 200) {
             break;
         }
+    }
+    $nextPage = $pageNum + 1;
+    $previousPage = $pageNum - 1;
+
+    echo "<br><br>";
+    if ($previousPage > 0){
+        echo "<a href='searchTitle.php?pageNum=".$previousPage."&rankStandard=".$ranks."&genre=".$sGenre."&TITLE=".$title."&useGenre=".$useGen."&maxPage=".$maxPage."&searchUser=".$ssuser."'>previous</a>";
+        echo " | ";
+    }
+    if ($pageNum <= $maxPage - 1) {
+        echo "<a href='searchTitle.php?pageNum=" . $nextPage . "&rankStandard=" . $ranks . "&genre=" . $sGenre . "&TITLE=" . $title . "&useGenre=" . $useGen . "&maxPage=".$maxPage."&searchUser=".$ssuser."'>next</a>";
     }
 } else {
     echo "no id found";

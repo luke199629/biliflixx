@@ -25,7 +25,7 @@ $result = mysqli_query($con, $sql);
 
 <!--请将这一段整合进首页search功能, 样式随意, form action 和method 和第一input name 不能改-->
 
-<form action="searchTitle.php" method="post">
+<form action="searchTitle.php" method="get">
     Title:<br>
     <input type="text" name="TITLE" value="EVA"><br>
     <select name="genre">
