@@ -82,7 +82,6 @@ else{
 $sql = "";
 
 if(isset($_GET["searchUser"]) && $_GET["searchUser"] == "true"){
-    echo 'hihi';
     $sql = "SELECT * FROM post WHERE post.author LIKE '%" . $title . "%'";
 
 }
@@ -91,11 +90,12 @@ else {
     if(isset($_GET["rankStandard"])){
         if($_GET["rankStandard"] == "byHotnessDesc"){
             if(isset($_GET["genre"]) && isset($_GET["useGenre"]) && $_GET["useGenre"] == "true"){
+
                 $genre = $_GET["genre"];
                 $sql = "SELECT * FROM post WHERE (post.tid = '$genre' OR post.pid = '$genre') AND (post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%' )
             ORDER BY favorites DESC, play DESC";
             }
-            else {
+            else{
                 $sql = "SELECT * FROM post WHERE post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%' 
             ORDER BY favorites DESC, play DESC";
             }
@@ -111,7 +111,7 @@ else {
             ORDER BY posttime DESC";
             }
         }
-        if($_GET["rankStandard"] == "byHotnessAsc"){
+        else if($_GET["rankStandard"] == "byHotnessAsc"){
             if(isset($_GET["genre"]) && isset($_GET["useGenre"]) && $_GET["useGenre"] == "true"){
                 $genre = $_GET["genre"];
                 $sql = "SELECT * FROM post WHERE (post.tid = '$genre' OR post.pid = '$genre') AND (post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%' )
@@ -244,20 +244,12 @@ else {
             }
 
 
-
-
             $sql = "SELECT post.pid, post.aid, post.id, post.title, t1.genre FROM post, t1 WHERE post.pid = t1.genre AND (post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%') ORDER BY t1.value DESC";
-
-            //$sql = "SELECT * FROM post WHERE post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%'";
-
-//            if ($con->query($sql) === TRUE) {
-//            } else {
-//                echo "Error: " . $sql . "<br>" . $con->error;
-//            }
 
             
         }
         else{
+
             $sql = "SELECT * FROM post WHERE post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%'";
 
 
@@ -265,8 +257,6 @@ else {
 
     }
     else {
-
-
         $sql = "SELECT * FROM post WHERE post.title LIKE '%" . $title . "%' OR tag LIKE '%" . $title . "%' OR description LIKE '%" . $title . "%'";
 
     }
@@ -286,20 +276,16 @@ $result = mysqli_query($con, $sql);
 
 
 //print out the data returned from the database
-$ctr = 0;
 if (mysqli_num_rows($result) > 0) {
     while ($row = mysqli_fetch_assoc($result)) {
         $linkinfo = "http://biliflixx.web.engr.illinois.edu/showAnime.php?id=" . $row["id"];
 
         //        echo "id: " . $row["id"] . " , title: " . $row["title"];
 
-        echo "<a href=" . $linkinfo . ">aid:" . $row["aid"] . " , title:" . $row["title"] . "PID".$row["pid"]."</a>";
+        echo "<a href=" . $linkinfo . ">aid:" . $row["aid"] . " , title:" . $row["title"] . "PID".$row["pid"].", tid: ". $row["tid"]."</a>";
 
         echo "<br>";
-        $ctr++;
-        if ($ctr >= 200) {
-            break;
-        }
+        
     }
     $nextPage = $pageNum + 1;
     $previousPage = $pageNum - 1;

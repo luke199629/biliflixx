@@ -126,7 +126,5 @@ echo gmdate('o - M, d - H:i:s', $postime);
 
 <a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>">I like it!
 </a>
+<br>
 
-
-</body>
-</html>
