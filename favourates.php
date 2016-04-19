@@ -65,7 +65,7 @@ if(isset($_SESSION["login"])) {
 
 //            $parentId = findParentid($videotid, $con);
 
-            changeFavorVal($videopid, 2, $userID, $con);
+            changeFavorVal($videopid, 1, $userID, $con);
 
 
             //die(onclick="alert('Hello world!')")

@@ -25,7 +25,7 @@
    <body>
 
         	<div id="wrapper"> 
-            <ul id="nav" class="cf">
+            <ul id="nav" class="cf"> 
                 <li><a href="http://biliflixx.web.engr.illinois.edu/" title="Home">Home</a></li>
                 <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411sp16/Gaze+of+Intelligence" title="About Us">About Us</a></li>
                  <li><a href="javascript:q=(document.location.href);void(open('insertUser.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));" title="Regist">Registration</a></li>
@@ -76,7 +76,7 @@
 						<input name="keyword" type="text" class="search-keyword" id="search-keyword" autocomplete="off" accesskey="s" x-webkit-speech x-webkit-grammar="builtin:translate" >
 						<tr><td><input type="submit" value="Search" align="center"/></td></tr>-->
 						<form action="searchTitle.php" method="get">
-						<img src="xiaohuangren.gif"/>
+						<a href="lucky.php"><img src="xiaohuangren.gif"/></a>
    						<br>
    				 			<!--<input type="text" name="TITLE" value="Please enter the key words" font size="12" class = "test" >-->
    				 			<input type="text"  name="TITLE" value="Please enter the key words_(:з」∠)_" onfocus="if(value=='Please enter the key words_(:з」∠)_') {value=''}" onblur="if (value=='') {value='Please enter the key words_(:з」∠)_'}" name="keyword" size="30" style="color:#A9A9A9;" class = "test">
@@ -84,7 +84,9 @@
 
    				 			
    				 			
-		  					<input type= "image" src="searchbox.gif" class = "searchButton"></form>  
+		  					<input type= "image" src="searchbox.gif" class = "searchButton"></form>
+		  					<form action="searchPage.php" method="get">
+		  					<input type= "image" src="advancedsearch.png" class = "searchButton2"></form>  
 		  					 
 						</div>
 						
@@ -281,16 +283,18 @@ function doMove(obj, iTarget, fnEnd, buffer)
 	<div class="list">
     	<ul>
 	    <li><img src="top101.png"/><p>Top10</p></li>
-            <li><img src="temp2.jpg" /><p>iPhone 4</p></li>
-            <li><img src="temp.jpg" /><p>iPad 2</p></li>
-            <li><img src="temp.jpg" /><p>iPod touch</p></li>
-            <li><img src="temp2.jpg" /><p>iPod classic</p></li>
-            <li><img src="temp.jpg" /><p>iPod shuffle</p></li>
-            <li><img src="temp2.jpg" /><p>iPod nano</p></li>
-            <li><img src="temp.jpg" /><p>MacBook Air</p></li>
-            <li><img src="temp2.jpg" /><p>MacBook Pro</p></li>
-            <li><img src="temp.jpg" /><p>Mac mini</p></li>
-            <li><img src="temp2.jpg" /><p>Mac Pro</p></li>
+	    
+	    <a href="showAnime.php?id=32024"><li><img src="1.gif"/><p>1</p></li></a>
+	    <a href="showAnime.php?id=70516"><li><img src="2.jpg"/><p>2</p></li></a>
+	    <a href="showAnime.php?id=94511"><li><img src="3.jpg"/><p>3</p></li></a> 
+            <a href="showAnime.php?id=2538"><li><img src="4.gif"/><p>4</p></li></a>
+            <a href="showAnime.php?id=194"><li><img src="5.jpg"/><p>5</p></li></a>
+            <a href="showAnime.php?id=64931"><li><img src="6.gif"/><p>6</p></li></a>
+            <a href="showAnime.php?id=26074"><li><img src="7.png"/><p>7</p></li></a>
+            <a href="showAnime.php?id=94334"><li><img src="8.jpg"/><p>8</p></li></a>
+            <a href="showAnime.php?id=41435"><li><img src="9.jpg"/><p>9</p></li></a>
+	    <a href="showAnime.php?id=68432"><li><img src="10.jpg"/><p>10</p></li></a>
+
         </ul>
     </div>
     <div class="scrollBar">

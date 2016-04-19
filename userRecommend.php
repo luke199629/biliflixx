@@ -1,6 +1,8 @@
 <?php
 header('Content-Type: text/html; charset=utf8');
 
+
+
 /**
  * Created by PhpStorm.
  * User: zhangyuanshan
@@ -11,6 +13,11 @@ include "connectDB.php";
 include "untility.php";
 
 session_start();
+
+echo "<a href='usrpage.php'>User Page</a>";
+echo "<br>";
+echo "<a href='index.html'>Home page</a>";
+echo "<br>";
 
 
 if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1) {
@@ -111,82 +118,95 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
     if(mysqli_num_rows($familiarUsers) <= 0){
         echo mysqli_num_rows($familiarUsers);
         echo "not enough users";
-    }
+        
+        //TODO ADD RECOMMEND
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    }else {
 
-    if($familiarUsers === FALSE){
-        echo "Error: FETCH USERS" . $sql2 . "<br>" . $con->error;
-    }
-
-    $user1 = mysqli_fetch_assoc($familiarUsers);
-
-    echo "user name is :".$user1["username"]."<br>";
-
-    $familiarUserName = $user1["username"];
-
-    $sql3 = "SELECT * FROM favorites WHERE userID = '$familiarUserName' AND (tid = ".$typeId1." OR pid = ".$typeId1." OR tid = ".$typeId2." OR pid = ".$typeId2." OR tid = ".$typeId3." OR pid = ".$typeId3.")";
-
-
-    echo $sql3;
-
-
-
-
-    echo "<br>";
-
-
-    $pageNum = 1;
-
-    $startPage = 0;
-
-    $maxPage = 0;
-
-    if(isset($_GET["maxPage"])){
-        $maxPage = $_GET["maxPage"];
-    }
-
-    if (isset($_GET["pageNum"])){
-        $pageNum = $_GET["pageNum"];
-        $startPage = $pageNum * 40;
-    }
-
-    if($pageNum == 1){
-        $temp = $con->query($sql3);
-        $totalResults = mysqli_num_rows($temp);
-        $maxPage = $totalResults / 40;
-    }
-
-    $sql3 = $sql3." LIMIT 40 OFFSET ".$startPage.";";
-
-    $recommandedVideos = $con->query($sql3);
-
-
-    if (mysqli_num_rows($recommandedVideos) > 0) {
-        while ($row = mysqli_fetch_assoc($recommandedVideos)) {
-            $linkinfo = "http://biliflixx.web.engr.illinois.edu/showAnime.php?id=" . $row["videoid"];
-
-            //        echo "id: " . $row["id"] . " , title: " . $row["title"];
-
-            echo "<a href=" . $linkinfo . ">title:" . $row["title"] . "PID" . $row["pid"] . "</a>";
-
-            echo "<br>";
+        if ($familiarUsers === FALSE) {
+            echo "Error: FETCH USERS" . $sql2 . "<br>" . $con->error;
         }
-        echo "<br><br>";
 
-        $nextPage = $pageNum + 1;
-        $previousPage = $pageNum - 1;
+        $user1 = mysqli_fetch_assoc($familiarUsers);
 
-        if ($previousPage > 0){
-            echo "<a href='userRecommand.php?pageNum=".$previousPage."&maxPage=".$maxPage."'>previous</a>";
-            echo " | ";
+        echo "user name is :" . $user1["username"] . "<br>";
+
+        $familiarUserName = $user1["username"];
+
+        $sql3 = "SELECT * FROM favorites WHERE userID = '$familiarUserName' AND (tid = " . $typeId1 . " OR pid = " . $typeId1 . " OR tid = " . $typeId2 . " OR pid = " . $typeId2 . " OR tid = " . $typeId3 . " OR pid = " . $typeId3 . ")";
+
+
+        echo $sql3;
+
+
+        echo "<br>";
+
+
+        $pageNum = 1;
+
+        $startPage = 0;
+
+        $maxPage = 0;
+
+        if (isset($_GET["maxPage"])) {
+            $maxPage = $_GET["maxPage"];
         }
-        if ($pageNum <= $maxPage - 1) {
-            echo "<a href='userRecommand.php?pageNum=" . $nextPage . "&maxPage=".$maxPage."'>next</a>";
+
+        if (isset($_GET["pageNum"])) {
+            $pageNum = $_GET["pageNum"];
+            $startPage = $pageNum * 40;
+        }
+
+        if ($pageNum == 1) {
+            $temp = $con->query($sql3);
+            $totalResults = mysqli_num_rows($temp);
+            $maxPage = $totalResults / 40;
+        }
+
+        $sql3 = $sql3 . " LIMIT 40 OFFSET " . $startPage . ";";
+
+        $recommandedVideos = $con->query($sql3);
+
+
+        if (mysqli_num_rows($recommandedVideos) > 0) {
+            while ($row = mysqli_fetch_assoc($recommandedVideos)) {
+                $linkinfo = "http://biliflixx.web.engr.illinois.edu/showAnime.php?id=" . $row["videoid"];
+
+                //        echo "id: " . $row["id"] . " , title: " . $row["title"];
+
+                echo "<a href=" . $linkinfo . ">title:" . $row["title"] . "PID" . $row["pid"] . "</a>";
+
+                echo "<br>";
+            }
+            echo "<br><br>";
+
+            $nextPage = $pageNum + 1;
+            $previousPage = $pageNum - 1;
+
+            if ($previousPage > 0) {
+                echo "<a href='userRecommend.php?pageNum=" . $previousPage . "&maxPage=" . $maxPage . "'>previous</a>";
+                echo " | ";
+            }
+            if ($pageNum <= $maxPage - 1) {
+                echo "<a href='userRecommend.php?pageNum=" . $nextPage . "&maxPage=" . $maxPage . "'>next</a>";
+            }
+        } else {
+            echo "fucking error";
         }
     }
-    else{
-        echo "fucking error";
-    }
-
 
 
 }

@@ -64,6 +64,22 @@ Upload video
 <br>
 <a href="upload.php">UploadPage</a>
 
+<br>
+
+<br>
+
+<br>
+
+<br>
+Recommendation
+<br>
+<a href="userRecommend.php">Recommendation Page</a>
+
+<br>
+Hot Video Prediction
+<br>
+<a href="prediction.php">Recommendation Page</a>
+
 
 <br>
 <br>
