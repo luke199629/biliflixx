@@ -45,10 +45,16 @@ $currtime = time();
 
 $timeInFormat = gmdate('o-n-d', $currtime);
 
+//$sql = "INSERT INTO hotIndex(aid, tid, dur, pid, dplaydt, dfavoritesdt,play, fav)
+//        (SELECT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
+//        WHERE post.aid NOT IN (SELECT aid FROM hotIndex) AND (post.play >= 70000 OR post.favorites >= 40000));";
+//
+
 $sql = "INSERT INTO hotIndex(aid, tid, dur, pid, dplaydt, dfavoritesdt,play, fav)
         (SELECT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
-        WHERE post.aid NOT IN (SELECT aid FROM hotIndex) AND (post.play >= 70000 OR post.favorites >= 40000));";
+        WHERE post.aid NOT IN (SELECT aid FROM hotIndex) AND (post.play > ANY (SELECT (avg(post.play) + 2.3 * STD(post.play)) FROM post) OR post.favorites > (SELECT (avg(post.favorites) + 2.3 * STD(post.favorites)) FROM post)) );";
 
+echo $sql;
 
 //TODO MAY CHANGE TO ORDER BY PLAY 
 

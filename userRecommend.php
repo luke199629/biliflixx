@@ -19,10 +19,12 @@ echo "<br>";
 echo "<a href='index.html'>Home page</a>";
 echo "<br>";
 
+$con = connectDB();
+
+
+$sql3 = "";
 
 if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login'] == 1) {
-    $con = connectDB();
-    mysqli_set_charset($con, 'utf8');
 
 
     $userName = $_SESSION["username"];
@@ -50,8 +52,8 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
     $top2Name = "";
     $top2Value = 0;
 
-    $top1Name = "";
-    $top1Value = 0;
+    $top3Name = "";
+    $top3Value = 0;
 
 
     foreach ($userInfo as $typeName => $typeValue) {
@@ -105,36 +107,54 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
     echo $typeId3;
     echo "<br>";
 
+    $times = 1;
 
+    do {
 
-    $sql2 = "SELECT * FROM updatePercent WHERE username != '$userName' AND ((".$top1Name." >= (".$top1Value." - 0.05)) AND (".$top1Name." <= (".$top1Value." + 0.05))) 
-             AND ((".$top2Name." >= (".$top2Value." - 0.07)) AND (".$top2Name." <= (".$top2Value." + 0.07))) 
-             AND ((".$top3Name." >= (".$top3Value." - 0.09)) AND (".$top3Name." <= (".$top3Value." + 0.09))) AND (SELECT COUNT(*) FROM favorites WHERE updatePercent.username = favorites.userID AND (tid = ".$typeId1." OR pid = ".$typeId1." OR tid = ".$typeId2." OR pid = ".$typeId2." OR tid = ".$typeId3." OR pid = ".$typeId3.")) > 0";
+        $sql2 = "SELECT * FROM updatePercent WHERE username != '$userName' AND ((" . $top1Name . " >= (" . $top1Value . " - 0.05 * ".$times.")) AND (" . $top1Name . " <= (" . $top1Value . " + 0.05 * ".$times."))) 
+             AND ((" . $top2Name . " >= (" . $top2Value . " - 0.07 * ".$times.")) AND (" . $top2Name . " <= (" . $top2Value . " + 0.07 * ".$times."))) 
+             AND ((" . $top3Name . " >= (" . $top3Value . " - 0.09 * ".$times.")) AND (" . $top3Name . " <= (" . $top3Value . " + 0.09 * ".$times."))) AND (SELECT COUNT(*) FROM favorites WHERE updatePercent.username = favorites.userID AND (tid = " . $typeId1 . " OR pid = " . $typeId1 . " OR tid = " . $typeId2 . " OR pid = " . $typeId2 . " OR tid = " . $typeId3 . " OR pid = " . $typeId3 . ")) > 0";
 
-    echo $sql2;
+        echo $sql2;
 
-    $familiarUsers = $con -> query($sql2);
+        echo "<br>";
+        $familiarUsers = $con->query($sql2);
+
+        echo mysqli_num_rows($familiarUsers);
+
+        echo "<br>";
+
+        $times += 0.2;
+
+    }while($times < 5 && mysqli_num_rows($familiarUsers) <= 0);
 
     if(mysqli_num_rows($familiarUsers) <= 0){
         echo mysqli_num_rows($familiarUsers);
         echo "not enough users";
         
         //TODO ADD RECOMMEND
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-    }else {
+
+        $sql3 = "SELECT * FROM favorites WHERE userID IN (SELECT DISTINCT b.userID FROM favorites AS a, favorites AS b WHERE a.videoid = b.videoid AND a.userID != b.userID AND  a.userID = ".$userName.")";
+
+        echo "<br>";
+
+        echo $sql3;
+        echo "<br>";
+
+
+        $recommandedVideos = $con->query($sql3);
+
+        if(mysqli_num_rows($recommandedVideos) <= 0){
+
+            echo "is here";
+
+            $sql3 = "SELECT * FROM post ORDER BY play DESC LIMIT 100";
+
+        }
+
+    }
+
+    else {
 
         if ($familiarUsers === FALSE) {
             echo "Error: FETCH USERS" . $sql2 . "<br>" . $con->error;
@@ -176,36 +196,73 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
             $maxPage = $totalResults / 40;
         }
 
-        $sql3 = $sql3 . " LIMIT 40 OFFSET " . $startPage . ";";
-
-        $recommandedVideos = $con->query($sql3);
 
 
-        if (mysqli_num_rows($recommandedVideos) > 0) {
-            while ($row = mysqli_fetch_assoc($recommandedVideos)) {
-                $linkinfo = "http://biliflixx.web.engr.illinois.edu/showAnime.php?id=" . $row["videoid"];
+    }
 
-                //        echo "id: " . $row["id"] . " , title: " . $row["title"];
+    $pageNum = 1;
 
-                echo "<a href=" . $linkinfo . ">title:" . $row["title"] . "PID" . $row["pid"] . "</a>";
+    $startPage = 0;
 
-                echo "<br>";
-            }
-            echo "<br><br>";
+    $maxPage = 0;
 
-            $nextPage = $pageNum + 1;
-            $previousPage = $pageNum - 1;
+    if(isset($_GET["maxPage"])){
+        $maxPage = $_GET["maxPage"];
+    }
 
-            if ($previousPage > 0) {
-                echo "<a href='userRecommend.php?pageNum=" . $previousPage . "&maxPage=" . $maxPage . "'>previous</a>";
-                echo " | ";
-            }
-            if ($pageNum <= $maxPage - 1) {
-                echo "<a href='userRecommend.php?pageNum=" . $nextPage . "&maxPage=" . $maxPage . "'>next</a>";
-            }
-        } else {
-            echo "fucking error";
+    if (isset($_GET["pageNum"])){
+        $pageNum = $_GET["pageNum"];
+        $startPage = $pageNum * 40;
+    }
+
+    $con = connectDB();
+
+    $sql = "SELECT * FROM Prediction";
+
+    if(!isset($_GET["pageNum"])){
+        $temp = $con->query($sql);
+        $totalResults = mysqli_num_rows($temp);
+        $maxPage = $totalResults / 40;
+    }
+
+
+
+
+    $sql3 = $sql3 . " LIMIT 40 OFFSET " . $startPage . ";";
+
+    echo $sql3;
+    mysqli_set_charset($con, 'utf8');
+
+
+    $recommandedVideos = $con->query($sql3);
+
+
+
+    if (mysqli_num_rows($recommandedVideos) > 0) {
+        while ($row = mysqli_fetch_assoc($recommandedVideos)) {
+
+            $linkinfo = "http://biliflixx.web.engr.illinois.edu/showAnime.php?id=" . $row["videoid"];
+
+            //        echo "id: " . $row["id"] . " , title: " . $row["title"];
+
+            echo "<a href=" . $linkinfo . ">title:" . $row["title"] . "PID" . $row["pid"] . "</a>";
+
+            echo "<br>";
         }
+        echo "<br><br>";
+
+        $nextPage = $pageNum + 1;
+        $previousPage = $pageNum - 1;
+
+        if ($previousPage > 0) {
+            echo "<a href='userRecommend.php?pageNum=" . $previousPage . "&maxPage=" . $maxPage . "'>previous</a>";
+            echo " | ";
+        }
+        if ($pageNum <= $maxPage - 1) {
+            echo "<a href='userRecommend.php?pageNum=" . $nextPage . "&maxPage=" . $maxPage . "'>next</a>";
+        }
+    } else {
+        echo "fucking error";
     }
 
 

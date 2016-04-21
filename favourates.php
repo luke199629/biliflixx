@@ -44,10 +44,20 @@ if(isset($_SESSION["login"])) {
         $existedRows = mysqli_query($con, $sql0);
         
         if(mysqli_num_rows($existedRows) == 0) {
+            $sql2 = "SELECT * FROM post WHERE id = '$id'";
+
+            $postResult = $con->query($sql2);
+
+            $row = $postResult->fetch_assoc();
+
+            $tid = $row["tid"];
+
+            $pid = $row["pid"];
 
 
 
-            $sql = mysqli_query($con, "INSERT INTO favorites(userID,videoid,title) VALUES ('$userID', '$id', '$title')");
+
+            $sql = mysqli_query($con, "INSERT INTO favorites(userID,videoid,title, tid, pid) VALUES ('$userID', '$id', '$title', '$tid', '$pid')");
 
 //            $sql = "SELECT * FROM favorites";
 //            $result = mysqli_query($con, $sql);

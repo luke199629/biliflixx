@@ -57,6 +57,10 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
     $sql4 = "SELECT * FROM GenreType WHERE tid = '$gen'";
 
+    echo $sql4;
+
+    echo "<br>";
+
     $typeinfo = $con->query($sql4);
 
     if($typeinfo === FALSE){
@@ -65,7 +69,11 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
     $typerrow = $typeinfo->fetch_assoc();
 
-    $parentID = $typerrow["parentId"];
+    $parentID = $typerrow["pid"];
+
+    echo $parentID;
+
+    echo "<br>";
 
     if ($parentID == 0){
         $parentID = $gen;

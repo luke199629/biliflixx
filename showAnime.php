@@ -115,6 +115,13 @@ echo "<img src=".$pic." alt=\"VideoCover\">";
 echo "<br>";
 echo "ANIME TITLE:".$title."<br><br>";
 //echo "Post time:".$posttime."<br><br>";
+echo "<br>";
+
+
+echo "<embed height=\"415\" width=\"544\" quality=\"high\" allowfullscreen=\"true\" type=\"application/x-shockwave-flash\" src=\"http://static.hdslb.com/miniloader.swf\" flashvars=\"aid=".$aid."&page=1\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"></embed>";
+echo "<br>";
+
+
 echo "Total plays:".$play."<br><br>";
 echo "tags:".$tags."<br><br>";
 echo "author:".$author."<br><br>";
@@ -122,6 +129,8 @@ echo "Genre:".$tidName."<br><br>";
 echo "description:".$dis."<br><br>";
 echo "favorites:".$favors."<br><br>";
 echo gmdate('o - M, d - H:i:s', $postime);
+
+
 ?>
 
 <a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>">I like it!
