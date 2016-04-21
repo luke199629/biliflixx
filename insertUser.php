@@ -33,6 +33,15 @@ $sql = mysqli_query($con, "INSERT INTO user(username, password, gender, age, ico
 $sql = "SELECT * FROM user";
 $result = mysqli_query($con, $sql);
 
+//echo "<script language=\"JavaScript\">\r\n";
+die('<script type="text/javascript">window.location.href="' . "tryout.html" . '";</script>');
+
+            //	echo " alert(\"Successfully registered.\");\r\n";
+            	
+            //	echo " history.back();\r\n";
+            	//echo "</script>";
+               
+
 //print out the data returned from the database
 //$ctr = 0;
 

@@ -31,7 +31,7 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
     
     $sql = "SELECT * FROM updatePercent WHERE username = '$userName';";
 
-    echo $sql;
+    //echo $sql;
 
     $rows = mysqli_query($con, $sql);
 
@@ -65,16 +65,16 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
             $top1Name = $typeName;
             $top1Value = $typeValue;
 
-            echo "1 ".$top1Name." ".$top1Value;
-            echo "<br>";
+            //echo "1 ".$top1Name." ".$top1Value;
+            //echo "<br>";
 
         }
         if($ctr == 1){
             $top2Name = $typeName;
             $top2Value = $typeValue;
 
-            echo "2 ".$top2Name." ".$top2Value;
-            echo "<br>";
+           // echo "2 ".$top2Name." ".$top2Value;
+            //echo "<br>";
 
         }
         if($ctr == 2){
@@ -82,8 +82,8 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
             $top3Value = $typeValue;
 
 
-            echo "3 ".$top3Name." ".$top3Value;
-            echo "<br>";
+           // echo "3 ".$top3Name." ".$top3Value;
+           // echo "<br>";
 
         }
         $ctr += 1;
@@ -94,18 +94,18 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
     $typeId1 = substr($top1Name, 7, 12);
 
-    echo $typeId1;
-    echo "<br>";
+    //echo $typeId1;
+    //echo "<br>";
 
     $typeId2 = substr($top2Name, 7, 12);
 
-    echo $typeId2;
-    echo "<br>";
+    //echo $typeId2;
+    //echo "<br>";
 
     $typeId3 = substr($top3Name, 7, 12);
 
-    echo $typeId3;
-    echo "<br>";
+    //echo $typeId3;
+    //echo "<br>";
 
     $times = 1;
 
@@ -115,14 +115,14 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
              AND ((" . $top2Name . " >= (" . $top2Value . " - 0.07 * ".$times.")) AND (" . $top2Name . " <= (" . $top2Value . " + 0.07 * ".$times."))) 
              AND ((" . $top3Name . " >= (" . $top3Value . " - 0.09 * ".$times.")) AND (" . $top3Name . " <= (" . $top3Value . " + 0.09 * ".$times."))) AND (SELECT COUNT(*) FROM favorites WHERE updatePercent.username = favorites.userID AND (tid = " . $typeId1 . " OR pid = " . $typeId1 . " OR tid = " . $typeId2 . " OR pid = " . $typeId2 . " OR tid = " . $typeId3 . " OR pid = " . $typeId3 . ")) > 0";
 
-        echo $sql2;
+        //echo $sql2;
 
-        echo "<br>";
+        //echo "<br>";
         $familiarUsers = $con->query($sql2);
 
-        echo mysqli_num_rows($familiarUsers);
+        //echo mysqli_num_rows($familiarUsers);
 
-        echo "<br>";
+        //echo "<br>";
 
         $times += 0.2;
 
@@ -136,17 +136,17 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
         $sql3 = "SELECT * FROM favorites WHERE userID IN (SELECT DISTINCT b.userID FROM favorites AS a, favorites AS b WHERE a.videoid = b.videoid AND a.userID != b.userID AND  a.userID = ".$userName.")";
 
-        echo "<br>";
+        //echo "<br>";
 
-        echo $sql3;
-        echo "<br>";
+       // echo $sql3;
+        //echo "<br>";
 
 
         $recommandedVideos = $con->query($sql3);
 
         if(mysqli_num_rows($recommandedVideos) <= 0){
 
-            echo "is here";
+           // echo "is here";
 
             $sql3 = "SELECT * FROM post ORDER BY play DESC LIMIT 100";
 
@@ -162,17 +162,17 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
         $user1 = mysqli_fetch_assoc($familiarUsers);
 
-        echo "user name is :" . $user1["username"] . "<br>";
+        echo "user name is: " . $user1["username"] . "<br>";
 
         $familiarUserName = $user1["username"];
 
         $sql3 = "SELECT * FROM favorites WHERE userID = '$familiarUserName' AND (tid = " . $typeId1 . " OR pid = " . $typeId1 . " OR tid = " . $typeId2 . " OR pid = " . $typeId2 . " OR tid = " . $typeId3 . " OR pid = " . $typeId3 . ")";
 
 
-        echo $sql3;
+        //echo $sql3;
 
 
-        echo "<br>";
+        //echo "<br>";
 
 
         $pageNum = 1;
@@ -230,7 +230,7 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
     $sql3 = $sql3 . " LIMIT 40 OFFSET " . $startPage . ";";
 
-    echo $sql3;
+    //echo $sql3;
     mysqli_set_charset($con, 'utf8');
 
 

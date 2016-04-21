@@ -209,3 +209,353 @@
 [11-Apr-2016 15:44:33 America/Chicago] PHP Fatal error:  Call to undefined function alert() in /home/biliflixx/public_html/favourates.php on line 39
 [11-Apr-2016 15:45:35 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/favourates.php on line 39
 [11-Apr-2016 15:46:09 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/favourates.php on line 39
+[12-Apr-2016 19:28:14 America/Chicago] PHP Fatal error:  Call to a member function query() on a non-object in /home/biliflixx/public_html/uploadfile.php on line 36
+[13-Apr-2016 02:24:48 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/biliflixx/public_html/uploadfile.php on line 56
+[13-Apr-2016 02:24:48 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/biliflixx/public_html/uploadfile.php on line 62
+[13-Apr-2016 02:25:29 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/biliflixx/public_html/uploadfile.php on line 56
+[13-Apr-2016 02:25:29 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/biliflixx/public_html/uploadfile.php on line 62
+[13-Apr-2016 02:33:29 America/Chicago] PHP Warning:  mysqli::query(): Empty query in /home/biliflixx/public_html/uploadfile.php on line 55
+[13-Apr-2016 02:33:29 America/Chicago] PHP Fatal error:  Call to a member function fetch_assoc() on a non-object in /home/biliflixx/public_html/uploadfile.php on line 61
+[13-Apr-2016 15:42:04 America/Chicago] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT) in /home/biliflixx/public_html/favourates.php on line 39
+[13-Apr-2016 15:43:47 America/Chicago] PHP Parse error:  syntax error, unexpected '" . '"' (T_CONSTANT_ENCAPSED_STRING) in /home/biliflixx/public_html/favourates.php on line 39
+[13-Apr-2016 15:51:51 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/usrpage.php on line 37
+[13-Apr-2016 15:52:35 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/usrpage.php on line 37
+[13-Apr-2016 15:52:54 America/Chicago] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/biliflixx/public_html/usrpage.php on line 37
+[13-Apr-2016 16:23:15 America/Chicago] PHP Parse error:  syntax error, unexpected 'href' (T_STRING) in /home/biliflixx/public_html/favourates.php on line 44
+[14-Apr-2016 13:05:23 America/Chicago] PHP Fatal error:  Call to undefined function fetchRowsFromPostID() in /home/biliflixx/public_html/favourates.php on line 39
+[14-Apr-2016 13:05:45 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 41
+[14-Apr-2016 13:09:56 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 41
+[14-Apr-2016 13:10:39 America/Chicago] PHP Warning:  mysql_num_rows() expects parameter 1 to be resource, object given in /home/biliflixx/public_html/favourates.php on line 41
+[14-Apr-2016 14:53:59 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/searchTitle.php:10) in /home/biliflixx/public_html/searchTitle.php on line 18
+[14-Apr-2016 14:55:11 America/Chicago] PHP Parse error:  syntax error, unexpected 'searchPage' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/searchTitle.php on line 16
+[15-Apr-2016 22:06:23 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/biliflixx/public_html/showFavorites.php on line 43
+[15-Apr-2016 22:07:38 America/Chicago] PHP Parse error:  syntax error, unexpected '"', expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/biliflixx/public_html/showFavorites.php on line 43
+[15-Apr-2016 22:09:14 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql2' (T_VARIABLE) in /home/biliflixx/public_html/showFavorites.php on line 44
+[15-Apr-2016 22:11:16 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql0' (T_VARIABLE) in /home/biliflixx/public_html/showFavorites.php on line 44
+[15-Apr-2016 22:11:22 America/Chicago] PHP Parse error:  syntax error, unexpected '$sql0' (T_VARIABLE) in /home/biliflixx/public_html/showFavorites.php on line 44
+[15-Apr-2016 22:12:29 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:2) in /home/biliflixx/public_html/showFavorites.php on line 3
+[15-Apr-2016 22:13:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:2) in /home/biliflixx/public_html/showFavorites.php on line 3
+[15-Apr-2016 22:13:50 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:2) in /home/biliflixx/public_html/showFavorites.php on line 3
+[15-Apr-2016 22:19:13 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:2) in /home/biliflixx/public_html/showFavorites.php on line 3
+[15-Apr-2016 22:22:27 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:2) in /home/biliflixx/public_html/showFavorites.php on line 3
+[15-Apr-2016 22:31:07 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 49
+[16-Apr-2016 00:07:46 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:13:04 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:15:11 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:16:04 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:21:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:22:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:23:31 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:23:36 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:24:21 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 90
+[16-Apr-2016 00:46:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 22
+[16-Apr-2016 00:47:16 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 22
+[16-Apr-2016 00:47:42 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 22
+[16-Apr-2016 00:49:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 21
+[16-Apr-2016 00:49:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 21
+[16-Apr-2016 02:27:50 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/biliflixx/public_html/searchTitle.php:16) in /home/biliflixx/public_html/searchTitle.php on line 41
+[16-Apr-2016 02:30:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 184
+[16-Apr-2016 02:35:26 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 184
+[16-Apr-2016 02:38:47 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 184
+[16-Apr-2016 03:52:56 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 03:56:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 03:56:13 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 03:58:08 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 03:58:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 03:58:54 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 04:02:27 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 250
+[16-Apr-2016 04:38:29 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/searchTitle.php on line 286
+[16-Apr-2016 16:07:02 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 54
+[16-Apr-2016 16:07:26 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 55
+[16-Apr-2016 16:07:40 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 54
+[16-Apr-2016 16:08:21 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 55
+[16-Apr-2016 16:08:41 America/Chicago] PHP Warning:  mysqli::query(): Couldn't fetch mysqli in /home/biliflixx/public_html/showAnime.php on line 132
+[16-Apr-2016 16:08:41 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/biliflixx/public_html/showAnime.php on line 133
+[16-Apr-2016 16:09:34 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:09:36 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:11:41 America/Chicago] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 54
+[16-Apr-2016 16:11:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 54
+[16-Apr-2016 16:13:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:08 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:08 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:08 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:08 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:09 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:09 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:13:10 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:14:47 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 62
+[16-Apr-2016 16:14:51 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 62
+[16-Apr-2016 16:16:49 America/Chicago] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '$' in /home/biliflixx/public_html/showFavorites.php on line 63
+[16-Apr-2016 16:17:14 America/Chicago] PHP Parse error:  syntax error, unexpected 'div' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 63
+[16-Apr-2016 16:17:40 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:3) in /home/biliflixx/public_html/showFavorites.php on line 4
+[16-Apr-2016 16:18:01 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/biliflixx/public_html/showFavorites.php:3) in /home/biliflixx/public_html/showFavorites.php on line 4
+[16-Apr-2016 16:18:09 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:10 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:10 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:11 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:11 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:12 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:12 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:12 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:13 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:13 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:13 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:18:16 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:21:24 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:21:24 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:21:25 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:21:25 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:21:25 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:21:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:23:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:23:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:26:38 America/Chicago] PHP Parse error:  syntax error, unexpected 'https' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 52
+[16-Apr-2016 16:27:59 America/Chicago] PHP Parse error:  syntax error, unexpected ')', expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 56
+[16-Apr-2016 16:28:26 America/Chicago] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 57
+[16-Apr-2016 16:31:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 137
+[16-Apr-2016 16:38:39 America/Chicago] PHP Fatal error:  Cannot redeclare connectDB() (previously declared in /home/biliflixx/public_html/connectDB.php:12) in /home/biliflixx/public_html/connectDB.php on line 21
+[16-Apr-2016 16:43:44 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 23
+[16-Apr-2016 16:44:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/lucky.php on line 23
+[16-Apr-2016 16:52:45 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showAnime.php on line 163
+[16-Apr-2016 16:53:21 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/biliflixx/public_html/showAnime.php on line 163
+[16-Apr-2016 16:53:22 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/biliflixx/public_html/showAnime.php on line 163
+[16-Apr-2016 16:59:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/showAnime.php on line 149
+[16-Apr-2016 17:08:02 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 57
+[16-Apr-2016 17:08:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'window' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 57
+[16-Apr-2016 17:11:09 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 57
+[16-Apr-2016 17:12:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 58
+[16-Apr-2016 17:18:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/biliflixx/public_html/showFavorites.php on line 57
+[16-Apr-2016 19:00:26 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 23
+[16-Apr-2016 19:02:14 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 25
+[16-Apr-2016 19:03:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 25
+[16-Apr-2016 19:03:54 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 26
+[16-Apr-2016 19:03:55 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 26
+[16-Apr-2016 19:06:30 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 26
+[16-Apr-2016 19:06:40 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 26
+[16-Apr-2016 19:26:50 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:52 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:54 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:56 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 19:26:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'else' (T_ELSE) in /home/biliflixx/public_html/searchTitle.php on line 259
+[16-Apr-2016 20:03:55 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:03:55 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:03:56 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:03:56 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:03:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:03:58 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:04:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:04:00 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:04:01 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:04:01 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:04 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:04 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:04 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:04 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:05 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:05 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:05 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:05 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:05 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:05 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:06 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:06 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:06 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:07 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:05:08 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 88
+[16-Apr-2016 20:05:08 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 96
+[16-Apr-2016 20:37:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:37:56 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:37:57 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:37:58 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:36 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:36 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:37 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:37 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:37 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:37 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:38 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:39 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:38:40 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:39:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 121
+[16-Apr-2016 20:51:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:51:00 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 115
+[16-Apr-2016 20:51:00 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 125
+[16-Apr-2016 20:52:27 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:27 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:27 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:27 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:28 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:29 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:29 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:29 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:29 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:30 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:31 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:31 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:31 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:31 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:32 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:33 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:33 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:33 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:33 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:52:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 107
+[16-Apr-2016 20:52:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 108
+[16-Apr-2016 20:52:35 America/Chicago] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 116
+[16-Apr-2016 20:52:35 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[16-Apr-2016 20:58:12 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommand.php on line 126
+[17-Apr-2016 20:20:59 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/biliflixx/public_html/userRecommend.php:4) in /home/biliflixx/public_html/userRecommend.php on line 16
+[20-Apr-2016 10:01:53 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/biliflixx/public_html/insertUser.php on line 40
+[20-Apr-2016 10:38:01 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/biliflixx/public_html/usrpage.php:44) in /home/biliflixx/public_html/usrpage.php on line 52
+[20-Apr-2016 10:40:13 America/Chicago] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/biliflixx/public_html/usrpage.php:81) in /home/biliflixx/public_html/usrpage.php on line 89
+[20-Apr-2016 15:24:27 America/Chicago] PHP Parse error:  syntax error, unexpected '".</h4><br><br>"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showAnime.php on line 160
+[20-Apr-2016 15:24:45 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/biliflixx/public_html/showAnime.php on line 160
+[20-Apr-2016 15:24:47 America/Chicago] PHP Parse error:  syntax error, unexpected ':', expecting ',' or ';' in /home/biliflixx/public_html/showAnime.php on line 160
+[20-Apr-2016 15:28:06 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showAnime.php on line 173
+[20-Apr-2016 15:28:24 America/Chicago] PHP Parse error:  syntax error, unexpected 'gmdate' (T_STRING), expecting ',' or ';' in /home/biliflixx/public_html/showAnime.php on line 173
+[20-Apr-2016 16:25:19 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/usrpage.php on line 137
+[20-Apr-2016 16:40:26 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 147
+[20-Apr-2016 16:40:26 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 241
+[20-Apr-2016 18:18:00 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/searchTitle.php on line 310
+[20-Apr-2016 18:41:32 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 147
+[20-Apr-2016 18:41:33 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 241
+[20-Apr-2016 22:15:23 America/Chicago] PHP Parse error:  syntax error, unexpected '<' in /home/biliflixx/public_html/showFavorites.php on line 31
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 131
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 132
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 147
+[20-Apr-2016 23:18:15 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 241
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 129
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 123
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 131
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 132
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 147
+[20-Apr-2016 23:18:30 America/Chicago] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/biliflixx/public_html/userRecommend.php on line 241

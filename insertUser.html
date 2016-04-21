@@ -1,33 +1,123 @@
-<html>
-<head>
-	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
-	
-</head>
-<body style = background-image:url(\temp3.jpg)>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Biliflixx - by Gaze of Intelligence</title>
+
+        <link href="signupcss/style.css" type="text/css" rel="stylesheet" media="screen and (min-width: 1px)"/>
+        
+        <script src="signupcss/signup.js" type="text/javascript"></script>
+        
 
 
+	<!-- Load fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<!-- Load css styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+    </head>
+   
+    <body background="xiaomai1.gif">
+
+      <form action="insertUser.php" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend><span class="number">1</span>Your account info</legend>
+          <label for="name">Username:</label>
+          <input type="text"  name="username">
+          
+          <label for="password">Password:</label>
+          <input type="password" name="password">
+          
+          <label for="repassword">Re-enter password:</label>
+          <input type="password" name="re_enteredpassword">
+
+        </fieldset>
+        
+        <fieldset>
+          <legend><span class="number">2</span>Your profile</legend>
+          <label for="age">Age:</label>
+          <input type="number" name="age">
+          
+        
+          <label for="name">Icon-URL:</label>
+          <input type="text"  name="iconAddr">
+        
+          <label>Gender:</label><br>
+          <input name="gender" type="radio" value="male" />Male<br>
+          <input name="gender" type="radio" value="female" />Female<br>
+          <input name="gender" type="radio" value="other" />Other<br>
+        </fieldset>
+
+<br><br>
+        <input type="submit" value="Sign Up" class="btn btn-primary">
+      </form>
+      
+    </body>
+</html>
+
+
+<!--
 <form action="insertUser.php" method="post">
 Username: <br>
 <input type="text" name="username"><br>
 Password:<br>
 <input name="password" type="password"/><br>
-Re-enter password:<br>
+Re-enter password:<br> 
 <input name="re_enteredpassword" type="password"/><br>
 Age:<br>
 <input name="age" type="number"><br>
 Icon-URL:<br>
 <input name= "iconAddr" type="text"><br>
-Gender: <br>
+Gender:<br>
 <input name="gender" type="radio" value="male" />Male<br>
 <input name="gender" type="radio" value="female" />Female<br>
 <input name="gender" type="radio" value="other" />Other<br>
 <input type="Submit">
 </form>
-
 <p></p>
-<!--orig usage: <a href="javascript:q=(document.location.href);void(open('http://example.com/submit.php?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));">click here</a>-->
+<!--orig usage: <a href="javascript:q=(document.location.href);void(open('http://example.com/submit.php?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));">click here</a>--><!--
 <p><a href="javascript:q=(document.location.href);void(open('http://biliflixx.web.engr.illinois.edu/tryout.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));"><input name="Jump" type="button" value="Submit(Nisemono)" /></a></p>
 </body>
 </html>
 <title></title>
-<p>Send questions or problems to engrit-help@illinois.edu</p>
+<p>Send questions or problems to engrit-help@illinois.edu</p>-->

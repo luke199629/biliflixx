@@ -93,7 +93,7 @@ if(isset($_SESSION['username']) && isset($_SESSION["login"]) && $_SESSION['login
 
     if ($con->query($sql2) === TRUE) {
         echo "New record created successfully <br>";
-        echo "<a href=http://biliflixx.web.engr.illinois.edu/upload.php> uploadPage </a>";
+        echo "<a href=http://biliflixx.web.engr.illinois.edu/usrpage.php> UserPage </a>";
 
     } else {
         echo "Error: " . $sql2 . "<br>" . $con->error;

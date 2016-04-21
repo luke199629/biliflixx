@@ -12,13 +12,6 @@ header('Content-Type: text/html; charset=utf8');
 
 
 
-<html>
-<a href="searchPage.php">Back to search page</a>
-<br>
-<a href="index.html">Back to home page</a>
-<br>
-<br>
-</html>
 
 
 <?php
@@ -272,7 +265,92 @@ $sql= $sql." LIMIT 40 OFFSET ".$startPage.";";
 
 //echo $sql;
 
-$result = mysqli_query($con, $sql);
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Profile</title
+    
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Biliflixx - by Gaze of Intelligence</title>
+
+	<!-- Load fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<!-- Load css styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+    
+</head>
+
+<body>
+<ul>
+  <li><a href="http://biliflixx.web.engr.illinois.edu/" title="Home">Home</a></li>
+                <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411sp16/Gaze+of+Intelligence" title="About Us">About Us</a></li>
+                 <li><a href="javascript:q=(document.location.href);void(open('insertUser.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));" title="Regist">Registration</a></li>
+                <li><a href="usrpage.php" title="account">My Account</a></li>
+                
+</ul>
+<div class="jumbotron home home-fullscreen" id="home">
+		
+		
+		<form action="searchPage.php" method="get">
+		  		<input type= "submit" value="Advanced Search" class = "btn btn-primary"></form> 
+			
+		</div>
+<div class align = "center" 
+
+
+				
+
+
+			<div class="container"><form action="searchTitle.php" method="get">
+   				<input type="text" name="TITLE" value="Please enter the key words_(:з」∠)_" onfocus="if(value=='Please enter the key words_(:з」∠)_') {value=''}" onblur="if (value=='') {value='Please enter the key words_(:з」∠)_'}" name="keyword" size="30" style="color:#A9A9A9;" class = "test">
+	
+		  		<input type= "submit" value="Search" class = "btn btn-primary"></form>
+        <section style="padding-bottom: 50px; padding-top: 50px;">
+         
+		
+		<?php
+		$result = mysqli_query($con, $sql);
 
 
 //print out the data returned from the database
@@ -292,11 +370,11 @@ if (mysqli_num_rows($result) > 0) {
 
     echo "<br><br>";
     if ($previousPage > 0){
-        echo "<a href='searchTitle.php?pageNum=".$previousPage."&rankStandard=".$ranks."&genre=".$sGenre."&TITLE=".$title."&useGenre=".$useGen."&maxPage=".$maxPage."&searchUser=".$ssuser."'>previous</a>";
+        echo "<a href='searchTitle.php?pageNum=".$previousPage."&rankStandard=".$ranks."&genre=".$sGenre."&TITLE=".$title."&useGenre=".$useGen."&maxPage=".$maxPage."&searchUser=".$ssuser."'>PREVIOUS</a>";
         echo " | ";
     }
     if ($pageNum <= $maxPage - 1) {
-        echo "<a href='searchTitle.php?pageNum=" . $nextPage . "&rankStandard=" . $ranks . "&genre=" . $sGenre . "&TITLE=" . $title . "&useGenre=" . $useGen . "&maxPage=".$maxPage."&searchUser=".$ssuser."'>next</a>";
+        echo "<a href='searchTitle.php?pageNum=" . $nextPage . "&rankStandard=" . $ranks . "&genre=" . $sGenre . "&TITLE=" . $title . "&useGenre=" . $useGen . "&maxPage=".$maxPage."&searchUser=".$ssuser."'>NEXT</a>";
     }
 } else {
     echo "no id found";
@@ -305,3 +383,24 @@ if (mysqli_num_rows($result) > 0) {
 
 //close connection
 mysqli_close($con);
+?>
+
+		
+	
+		
+		</div>
+		
+		
+<div align="center">	
+<a href="searchPage.php">Back to search page</a>
+<br>
+<a href="index.html">Back to home page</a>
+<br>
+<br>
+</div>
+
+
+		
+		
+		
+	</body>

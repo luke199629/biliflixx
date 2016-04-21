@@ -101,39 +101,87 @@ mysqli_close($con);
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Show Anime</title>
+    <title>Show Anime</title>    
+
+	<!-- Load fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+	<!-- Load css styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<style>
+body {margin:0;}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
 </head>
 <body>
 
-<br>
-Anime info:
-<br>
+<ul>
+  <li><a href="http://biliflixx.web.engr.illinois.edu/" title="Home">Home</a></li>
+                <li><a href="https://wiki.cites.illinois.edu/wiki/display/cs411sp16/Gaze+of+Intelligence" title="About Us">About Us</a></li>
+                 <li><a href="javascript:q=(document.location.href);void(open('insertUser.html?url='+escape(q),'_self','resizable,location,menubar,toolbar,scrollbars,status'));" title="Regist">Registration</a></li>
+                <li><a href="usrpage.php" title="account">My Account</a></li>
+                
+</ul>
+
+<div style="padding:20px;margin-top:30px;background:url('../xiaomai3.jpg');background-repeat:no-repeat;background-size:cover;" align="center">
 <br>
 
 <?php
 echo "<img src=".$pic." alt=\"VideoCover\">";
-echo "<br>";
-echo "ANIME TITLE:".$title."<br><br>";
-//echo "Post time:".$posttime."<br><br>";
-echo "<br>";
 
+echo "<h2>".$title."</h2><br>";
+//echo "Post time:".$posttime."<br><br>";
 
 echo "<embed height=\"415\" width=\"544\" quality=\"high\" allowfullscreen=\"true\" type=\"application/x-shockwave-flash\" src=\"http://static.hdslb.com/miniloader.swf\" flashvars=\"aid=".$aid."&page=1\" pluginspage=\"http://www.adobe.com/shockwave/download/download.cgi?P1_Prod_Version=ShockwaveFlash\"></embed>";
 echo "<br>";
 
 
-echo "Total plays:".$play."<br><br>";
-echo "tags:".$tags."<br><br>";
-echo "author:".$author."<br><br>";
-echo "Genre:".$tidName."<br><br>";
-echo "description:".$dis."<br><br>";
-echo "favorites:".$favors."<br><br>";
+echo "<h4>Total plays:".$play."</h4>";
+echo "<h4>tags:".$tags."</h4>";
+echo "<h4>author:".$author."</h4>";
+echo "<h4>Genre:".$tidName."</h4>";
+echo "<h4>description:".$dis."</h4>";
+echo "<h4>favorites:".$favors."</h4>";
+echo "<h4>";
 echo gmdate('o - M, d - H:i:s', $postime);
+echo "</h4>";
+?><h3>
+<a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>">I like it!</a>
+<h3>
 
-
-?>
-
-<a href="favourates.php?id=<?php echo $id;?>&title=<?php echo $title;?>">I like it!
-</a>
-<br>
-
+</div>
+</body>
+</html>
