@@ -49,12 +49,22 @@ $timeInFormat = gmdate('o-n-d', $currtime);
 //        (SELECT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
 //        WHERE post.aid NOT IN (SELECT aid FROM hotIndex) AND (post.play >= 70000 OR post.favorites >= 40000));";
 //
+//
+//$sql = "INSERT INTO hotIndex(aid, tid, dur, pid, dplaydt, dfavoritesdt,play, fav)
+//        (SELECT DISTINCT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
+//        WHERE ((post.aid NOT IN (SELECT hotIndex.aid FROM hotIndex)) AND (post.play > ANY (SELECT (avg(post.play) + 2.3 * STD(post.play)) FROM post) OR post.favorites > ANY (SELECT (avg(post.favorites) + 2.3 * STD(post.favorites)) FROM post)) ));";
+
+//echo $sql;
+
+
 
 $sql = "INSERT INTO hotIndex(aid, tid, dur, pid, dplaydt, dfavoritesdt,play, fav)
-        (SELECT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
-        WHERE post.aid NOT IN (SELECT aid FROM hotIndex) AND (post.play > ANY (SELECT (avg(post.play) + 2.3 * STD(post.play)) FROM post) OR post.favorites > (SELECT (avg(post.favorites) + 2.3 * STD(post.favorites)) FROM post)) );";
+        (SELECT DISTINCT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
+        WHERE ((post.aid NOT IN (SELECT hotIndex.aid FROM hotIndex)) AND (post.play > ANY (SELECT (avg(post.play) + 2.3 * STD(post.play))) OR (post.favorites > ANY (SELECT (avg(post.favorites) + 2.3 * STD(post.favorites)))))));";
 
-echo $sql;
+
+echo "<br>";
+
 
 //TODO MAY CHANGE TO ORDER BY PLAY 
 
@@ -63,13 +73,13 @@ if($con->query($sql) === TRUE ){
 }
 else{
     echo "update hot fail";
-    echo "Error: temp table" . $sql . "<br>" . $con->error;
+    echo "Error: hot fail" . $sql . "<br>" . $con->error;
 }
 
 echo "<br>";
+echo "here";
 
-
-$sql = "UPDATE `hotIndex` SET `hdate`= curdate() WHERE `hdate` = 0000-00-00";
+$sql = "UPDATE `hotIndex` SET `hdate`= DATE_SUB(curdate(), INTERVAL 1 DAY ) WHERE `hdate` = 0000-00-00";
 
 
 if($con->query($sql) === TRUE ){

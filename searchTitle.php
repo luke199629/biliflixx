@@ -168,7 +168,7 @@ else {
                 echo "Error: temp table" . $sql . "<br>" . $con->error;
             }
 
-            echo $sql;
+//            echo $sql;
 
             $sqltemp = " INSERT INTO t1 VALUES (1, '$t1');";
             if ($con->query($sqltemp) === TRUE) {
@@ -360,7 +360,7 @@ if (mysqli_num_rows($result) > 0) {
 
         //        echo "id: " . $row["id"] . " , title: " . $row["title"];
 
-        echo "<a href=" . $linkinfo . ">aid:" . $row["aid"] . " , title:" . $row["title"] . "PID".$row["pid"].", tid: ". $row["tid"]."</a>";
+        echo "<a href=" . $linkinfo . ">title:" . $row["title"] . "PID".$row["pid"]."</a>";
 
         echo "<br>";
         

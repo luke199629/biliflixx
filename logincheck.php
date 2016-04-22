@@ -14,8 +14,7 @@ include 'connectDB.php';
 
 
 if($username && $password){
-    $username = test_input($username);
-    $password = test_input($password);
+//    $username = test_input($username);
     //$password = sha1($password);
 
 
