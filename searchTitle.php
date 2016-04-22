@@ -360,7 +360,7 @@ if (mysqli_num_rows($result) > 0) {
 
         //        echo "id: " . $row["id"] . " , title: " . $row["title"];
 
-        echo "<a href=" . $linkinfo . ">title:" . $row["title"] . "PID".$row["pid"]."</a>";
+        echo "<a href=" . $linkinfo . ">" .$row["id"]. $row["title"] . $row["tid"]."PID".$row["pid"]."</a>";
 
         echo "<br>";
         

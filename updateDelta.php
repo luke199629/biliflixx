@@ -60,7 +60,7 @@ $timeInFormat = gmdate('o-n-d', $currtime);
 
 $sql = "INSERT INTO hotIndex(aid, tid, dur, pid, dplaydt, dfavoritesdt,play, fav)
         (SELECT DISTINCT post.aid, post.tid, post.dur, post.pid, post.dplaydt, post.dfavoritesdt, post.play, post.favorites FROM post
-        WHERE ((post.aid NOT IN (SELECT hotIndex.aid FROM hotIndex)) AND (post.play > ANY (SELECT (avg(post.play) + 2.3 * STD(post.play))) OR (post.favorites > ANY (SELECT (avg(post.favorites) + 2.3 * STD(post.favorites)))))));";
+        WHERE ((post.aid NOT IN (SELECT hotIndex.aid FROM hotIndex)) AND (post.play > ANY (SELECT (avg(post.play) + 3 * STD(post.play))) OR (post.favorites > ANY (SELECT (avg(post.favorites) + 3 * STD(post.favorites)))))));";
 
 
 echo "<br>";
@@ -296,10 +296,10 @@ echo $afav;
 echo "<br>";
 
 
-$sql = "INSERT INTO Prediction(aid, id, title) (SELECT post.id, post.aid, post.title FROM post, weights
-        WHERE (((post.dplaydt >= ".$aplay." * weights.day1 * weights.day2 * weights.day3 * (1 - weights.percentage)) 
-        OR (post.dfavoritesdt >= ".$afav." * weights.day1 * weights.day2 * weights.day3 * (1 - weights.percentage)))
-        AND weights.pid = post.pid))";
+$sql = "INSERT INTO Prediction(aid, id, title) (SELECT post.aid, post.id, post.title FROM post, weights
+        WHERE (((post.dplaydt >= 0.7 * ".$aplay." * weights.day1 * weights.day2 * weights.day3 * (1 - weights.percentage)) 
+        OR (post.dfavoritesdt >= 0.7 * ".$afav." * weights.day1 * weights.day2 * weights.day3 * (1 - weights.percentage)))
+        AND weights.pid = post.pid) Order by post.play)";
 
 echo $sql;
 

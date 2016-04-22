@@ -113,7 +113,7 @@ opacity:0.7;
         <option value="byTimeDesc">By Time Desc</option>
         <option value="byHotnessAsc">By Hotness Asc</option>
         <option value="byTimeAsc">By Time Asc</option>
-        <option value="byFavor">By genre you liked</option>
+        <option value="byFavor">By your previous interests</option>
     </select>
     <br>
      <h3>Search by user:</h3> 

@@ -86,7 +86,7 @@ li a:hover:not(.active) {
      Name: <input type="text" name="username">
     <span class="error">*  
 	<?php echo $passwordErr;?></span>
-   PassWord: <input type="text" name = "password">
+   PassWord: <input type="password" name = "password">
     
 
     <br><br>
